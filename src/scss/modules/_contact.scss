@@ -1,0 +1,113 @@
+.Contact {
+  position: relative;
+  text-align: center;
+  background: none !important;
+  height: auto;
+
+  h3 {
+    display: inline-block;
+  }
+
+  h4, p {
+    margin-bottom: 0;
+    text-align: left;
+    font-size: .8em;
+    line-height: 1em;
+    max-width: 10em;
+  }
+
+  &--Content {
+    margin: 50px 0;
+    z-index: 2;
+    position: relative;
+    padding: 15px 0 20px;
+    background-color: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+    &:after {
+      content: '';
+      clear: both;
+    }
+
+    &Wrapper {
+      width: 100%;
+      max-width: 1024px;
+      display: inline-block;
+
+      @include media-breakpoint-up(lg) {
+        width: auto;
+        min-width: 50%;
+      }
+    }
+  }
+
+  &--Text {
+    position: relative;
+    left: 50%;
+    width: 8em;
+    transform: translateX(-50%);
+
+    &:after {
+      content: '';
+      display: block;
+      height:0;
+      width: 2.3em;
+      border-top: 2px solid darkgoldenrod;
+      margin: 1em 0 1em 3em;
+    }
+  }
+
+  &--Imprint {
+    position: relative;
+    text-align: center;
+    font-size: small;
+    z-index: 2;
+    bottom: 0;
+    background-color: #3f3f3f;
+    color: #fff;
+    margin: 30px -50px -62px ;
+    padding: 20px 0;
+    border-top: 2px solid darkgoldenrod;
+  }
+
+  &--Print,
+  &--Mail,
+  &--Xing,
+  &--Linkedin {
+    font-size: 1em;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    display: inline-block;
+    margin: .2em 1em;
+    transition: all 250ms cubic-bezier(.25,.8,.25,1);
+
+    color: #3f3f3f;
+    text-indent: -10000px;
+    text-align:unset;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(0.5) grayscale(1);
+
+    &:hover,
+    &:active {
+      color: darkgoldenrod;
+      cursor: pointer;
+      filter: none;
+    }
+  }
+
+  &--Mail {
+    background-image: url('https://api.iconify.design/fa-envelope.svg?color=%23b8860b');
+  }
+
+  &--Xing {
+    background-image: url('https://api.iconify.design/fa-brands:xing-square.svg?color=%23b8860b');
+  }
+
+  &--Linkedin {
+    background-image: url('https://api.iconify.design/fa-brands:linkedin.svg?color=%23b8860b');
+  }
+}

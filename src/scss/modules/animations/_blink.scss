@@ -1,0 +1,49 @@
+.Animation--TextBlink__White {
+  color: #fff;
+  animation: 1s blink__white step-end infinite;
+}
+
+@keyframes blink__white {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
+}
+
+@-moz-keyframes blink__white {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
+}
+
+@-webkit-keyframes blink__white {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
+}
+
+@-ms-keyframes blink__white {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
+}
+
+@-o-keyframes blink__white {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
+}

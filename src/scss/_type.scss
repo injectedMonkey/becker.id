@@ -1,0 +1,52 @@
+$min_width: 375px;
+$max_width: 1200px;
+$min_font: 16px;
+$max_font: 22px;
+
+$line_mod: 1.4;
+
+$mod_1: 1.2; // mobile
+$mod_2: 1.5; // desktop
+
+h1, h2, h3, h4 {
+  font-weight: 200;
+}
+
+html {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  line-height: 1.4em;
+}
+
+//$min_font: 18px;
+
+%h1, h1 {
+  font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem;
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
+}
+
+%h2, h2 {
+  font-size: $mod_1*$mod_1*$mod_1 *1rem;
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
+}
+
+%h3, h3 {
+  font-size: $mod_1*$mod_1 *1rem;
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font);
+}
+
+%h4, h4 {
+  font-size: $mod_1*1rem;
+  @include fluid-type($min_width, $max_width, $mod_1 *$min_font, $mod_2 *$min_font);
+}
+
+%h5, h5 {
+  font-size: 1rem;
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
+p {
+  text-align: justify;
+  font-size: 1rem;
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  @include fluid-line-height($min_width, $max_width, $min_font, $max_font, $line_mod);
+}

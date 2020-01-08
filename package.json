@@ -1,0 +1,38 @@
+{
+  "name": "becker.id",
+  "version": "0.0.1",
+  "description": "personal portfolio website",
+  "main": "src/index.html",
+  "dependencies": {
+    "bootstrap4": "0.0.1-security",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "cssnano": "^4.1.10",
+    "fibers": "^4.0.2",
+    "grunt": "^1.0.4",
+    "grunt-contrib-handlebars": "^2.0.0",
+    "grunt-contrib-imagemin": "^3.1.0",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-critical": "^1.1.2",
+    "grunt-cwebp": "^2.1.1",
+    "grunt-image": "^5.0.1",
+    "grunt-postcss": "^0.9.0",
+    "grunt-real-favicon": "^0.2.3",
+    "grunt-responsive-images": "^1.10.1",
+    "grunt-sass": "^3.1.0",
+    "load-grunt-tasks": "^5.1.0",
+    "node-sass": "^4.13.0",
+    "postcss-combine-media-query": "^1.0.0",
+    "postcss-uncss": "^0.17.0",
+    "uglify": "^0.1.5",
+    "uncss": "^0.17.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan Becker",
+  "license": "MIT"
+}

@@ -1,0 +1,73 @@
+.Welcome {
+  background: rgb(51,51,51);
+  background: linear-gradient(0deg, rgba(51,51,51,1) 0%, rgba(51,51,51,1) 46%, rgba(136,136,136,1) 100%);
+
+  &--Text {
+    position: relative;
+    color: white;
+    z-index: 2;
+    @extend %h1;
+    line-height: .9em;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: -90%;
+    }
+
+    @include media-breakpoint-up(md) {
+      margin-top: -40%;
+      left: 60%;
+    }
+
+    &Subline {
+      @extend %h4;
+      line-height: .8em;
+      display: block;
+      font-weight: 200;
+    }
+  }
+
+  &--ArrowDown {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    text-indent: -9999px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-radius: 1px;
+    transition: all .25s ease-in;
+    opacity: .5;
+    text-decoration: none;
+    color: transparent;
+
+    transform: rotate(-135deg);
+    bottom: 30px;
+    left: calc(50% - 15px);
+
+    &:before {
+      display: block;
+      height: 200%;
+      width: 200%;
+      margin-left: -50%;
+      margin-top: -50%;
+      content: "";
+      transform: rotate(45deg);
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &--ImageMood {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    filter: brightness(0.38);
+    transform: translate(-50%, 0);
+  }
+}

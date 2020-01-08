@@ -1,0 +1,11 @@
+@media print {
+  .Header,
+  .Welcome
+  {
+    display: none;
+  }
+}
+
+@page  {
+  margin: 2cm
+}
