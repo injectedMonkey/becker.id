@@ -7,8 +7,8 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         clean: {
-            dist: {
-                src: ['dist']
+            docs: {
+                src: ['docs']
             },
         },
         copy: {
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
                 expand: true,
                 flatten: true,
                 src: ['src/favicon/*', '!**/*.html', '!**/*.md'],
-                dest: 'dist/'
+                dest: 'docs/'
             }
         },
         htmlmin: {
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
                     collapseWhitespace: true
                 },
                 files: {
-                    'dist/index.html': 'src/index.html'
+                    'docs/index.html': 'src/index.html'
                 }
             }
         },
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
         uglify: {
             build: {
                 src: 'src/js/<%= pkg.name %>.js',
-                dest: 'dist/js/<%= pkg.name %>.min.js'
+                dest: 'docs/js/<%= pkg.name %>.min.js'
             }
         },
         sass: {
@@ -51,8 +51,8 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'dist/css/<%= pkg.name %>.css': 'src/scss/main.scss',
-                    'dist/css/<%= pkg.name %>.behavior.css': 'src/scss/behavior.scss'
+                    'docs/css/<%= pkg.name %>.css': 'src/scss/main.scss',
+                    'docs/css/<%= pkg.name %>.behavior.css': 'src/scss/behavior.scss'
                 }
             }
         },
@@ -63,9 +63,9 @@ module.exports = function(grunt) {
             },
             target: {
                 files: {
-                    'dist/css/<%= pkg.name %>.min.css': [
-                        'dist/css/<%= pkg.name %>.css',
-                        'dist/css/<%= pkg.name %>.behavior.css',
+                    'docs/css/<%= pkg.name %>.min.css': [
+                        'docs/css/<%= pkg.name %>.css',
+                        'docs/css/<%= pkg.name %>.behavior.css',
                     ]
                 }
             }
@@ -99,7 +99,7 @@ module.exports = function(grunt) {
                     expand: true,
                     src: ['**/*.{jpg,gif,png}'],
                     cwd: 'src/images/mood',
-                    dest: 'dist/images/mood/'
+                    dest: 'docs/images/mood/'
                 }]
             },
             profile: {
@@ -120,7 +120,7 @@ module.exports = function(grunt) {
                     expand: true,
                     src: ['**/*.{jpg,gif,png}'],
                     cwd: 'src/images/profile',
-                    dest: 'dist/images/profile/'
+                    dest: 'docs/images/profile/'
                 }]
             }
         },
@@ -128,24 +128,19 @@ module.exports = function(grunt) {
             dynamic: {
                 files: [{
                     expand: true,
-                    cwd: 'dist/images',
-                    //cwd: 'src/images',
+                    cwd: 'docs/images',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'dist/images'
+                    dest: 'docs/images'
                 }]
             }
         },
         cwebp: {
             dynamic: {
-                //options: {
-                //    q: 50
-                //},
                 files: [{
                     expand: true,
-                    cwd: 'dist/images',
-                    //cwd: 'src/images',
+                    cwd: 'docs/images',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'dist/images'
+                    dest: 'docs/images'
                 }]
             }
         },
@@ -154,7 +149,7 @@ module.exports = function(grunt) {
                 // Here we watch the files the sass task will compile to
                 // These files are sent to the live reload server after sass compiles to them
                 options: { livereload: true },
-                files: ['dist/**/*'],
+                files: ['docs/**/*'],
             },
             css: {
                 files: 'src/scss/**/*.scss',
@@ -179,7 +174,7 @@ module.exports = function(grunt) {
                     require('autoprefixer')({}),
                     require('postcss-combine-media-query')(),
                     require('postcss-uncss')({
-                        html: ['dist/index.html'],
+                        html: ['docs/index.html'],
                         ignore: [/[\.#]fp-./]
                     }),
                     require('cssnano')({
@@ -193,7 +188,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 src: [
-                    'dist/css/*.css',
+                    'docs/css/*.css',
                     '!**/*behavior*.css',
                     '!**/*.min.css',
                 ],
@@ -208,8 +203,8 @@ module.exports = function(grunt) {
                     height: 768,
                     minify: true
                 },
-                src: 'dist/index.html',
-                dest: 'dist/index.html'
+                src: 'docs/index.html',
+                dest: 'docs/index.html'
             }
         }
     });
