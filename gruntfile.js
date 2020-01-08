@@ -12,15 +12,22 @@ module.exports = function(grunt) {
             },
         },
         copy: {
-            templates: {
-                src: 'src/index.html',
-                dest: 'dist/index.html'
-            },
             favicon: {
                 expand: true,
                 flatten: true,
-                src: ['src/favicon/*', '!**/*.html'],
+                src: ['src/favicon/*', '!**/*.html', '!**/*.md'],
                 dest: 'dist/'
+            }
+        },
+        htmlmin: {
+            dist: {
+                options: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                },
+                files: {
+                    'dist/index.html': 'src/index.html'
+                }
             }
         },
         concat: {
@@ -155,7 +162,7 @@ module.exports = function(grunt) {
             },
             html: {
                 files: 'src/**/*.html',
-                tasks: ['copy']
+                tasks: ['copy', 'htmlmin']
             },
             javascript: {
                 files: 'src/**/*.js',
@@ -209,6 +216,7 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-concat');
@@ -229,6 +237,7 @@ module.exports = function(grunt) {
     grunt.registerTask('build', [
         'clean',
         'copy',
+        'htmlmin',
         'concat',
         'uglify',
         'sass',

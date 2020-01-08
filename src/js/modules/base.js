@@ -1,4 +1,3 @@
-/* global fullpage */
 (function(window, document, Fullpage, undef) {
     document.body.className = document.body.className.replace(/no-js/, 'js');
 
@@ -6,9 +5,9 @@
         link.setAttribute('href', link.attributes.href.value.replace(/Section/, ''));
     });
 
-    const page = new fullpage('#Page', {
+    const page = new Fullpage('#Page', {
         anchors: ['Welcome', 'About', 'Skills', 'Experience', 'Contact'],
-        navigationTooltips: ['Welcome', 'About', 'Skills', 'Experience', 'Contact'],
+        navigationTooltips: ['Willkommen', 'Über mich', 'Skills', 'Erfahrung', 'Kontakt'],
         scrollBar: true,
         navigation: true,
         navigationPosition: 'right',

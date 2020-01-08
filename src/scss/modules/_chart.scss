@@ -12,6 +12,8 @@
 .Chart__Circle {
   display: block;
   max-height: 140px;
+  height: 100%;
+  width: 100%;
 
   @include media-breakpoint-up(lg) {
     margin: 30px auto auto;
