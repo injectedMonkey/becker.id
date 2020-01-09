@@ -4216,7 +4216,7 @@ if(window.jQuery && window.fullpage){
 (function(window, document, Fullpage, undef) {
     document.body.className = document.body.className.replace(/no-js/, 'js');
 
-    document.querySelector('.Header').querySelectorAll('a').forEach(function(link) {
+    document.querySelectorAll('.has-anchor').forEach(function(link) {
         link.setAttribute('href', link.attributes.href.value.replace(/Section/, ''));
     });
 

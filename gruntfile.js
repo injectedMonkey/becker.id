@@ -23,6 +23,7 @@ module.exports = function(grunt) {
             },
             html: {
                 expand: true,
+                flatten: true,
                 src: ['src/**/*.html', '!src/favicon/**/*.html'],
                 dest: 'docs/'
             }
