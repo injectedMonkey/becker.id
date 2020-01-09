@@ -18,7 +18,7 @@ module.exports = function(grunt) {
             favicon: {
                 expand: true,
                 flatten: true,
-                src: ['src/favicon/*', '!**/*.html', '!**/*.md'],
+                src: ['src/favicon/*', 'src/CNAME', '!**/*.html', '!**/*.md'],
                 dest: 'docs/'
             },
             html: {
