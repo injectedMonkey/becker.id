@@ -7,8 +7,11 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         clean: {
-            docs: {
+            empty: {
                 src: ['docs']
+            },
+            kondo: {
+                src: ['docs/**/*_pre.html']
             },
         },
         copy: {
@@ -17,16 +20,28 @@ module.exports = function(grunt) {
                 flatten: true,
                 src: ['src/favicon/*', '!**/*.html', '!**/*.md'],
                 dest: 'docs/'
+            },
+            html: {
+                expand: true,
+                src: ['src/**/*.html', '!src/favicon/**/*.html'],
+                dest: 'docs/'
             }
         },
         htmlmin: {
             dist: {
                 options: {
-                    removeComments: true,
+                    removeComments: false,
                     collapseWhitespace: true
                 },
                 files: {
-                    'docs/index.html': 'src/index.html'
+                    'docs/index.html': 'docs/index_pre.html'
+                }
+            }
+        },
+        processhtml: {
+            dist: {
+                files: {
+                    'docs/index_pre.html': ['src/index.html']
                 }
             }
         },
@@ -157,7 +172,7 @@ module.exports = function(grunt) {
             },
             html: {
                 files: 'src/**/*.html',
-                tasks: ['copy', 'htmlmin']
+                tasks: ['copy:html']
             },
             javascript: {
                 files: 'src/**/*.js',
@@ -206,6 +221,16 @@ module.exports = function(grunt) {
                 src: 'docs/index.html',
                 dest: 'docs/index.html'
             }
+        },
+        connect: {
+            server: {
+                options: {
+                    port: 9001,
+                    open : true,
+                    base: 'docs',
+                    livereload : true
+                },
+            }
         }
     });
 
@@ -219,8 +244,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-image');
     grunt.loadNpmTasks('grunt-cwebp');
     grunt.loadNpmTasks('grunt-responsive-images');
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-connect');
 
-    grunt.registerTask('default', ['copy', 'sass']);
+    grunt.registerTask('default', ['connect', 'watch']);
 
     grunt.registerTask('css', [
         'sass',
@@ -230,8 +257,9 @@ module.exports = function(grunt) {
     ]);
 
     grunt.registerTask('build', [
-        'clean',
-        'copy',
+        'clean:empty',
+        'copy:favicon',
+        'processhtml',
         'htmlmin',
         'concat',
         'uglify',
@@ -242,5 +270,6 @@ module.exports = function(grunt) {
         'responsive_images',
         'image',
         'cwebp',
+        'clean:kondo',
     ]);
 };
