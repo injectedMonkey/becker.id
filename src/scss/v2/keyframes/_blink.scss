@@ -1,0 +1,8 @@
+@keyframes blink__white {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
+}
