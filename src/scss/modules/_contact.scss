@@ -4,16 +4,10 @@
   background: none !important;
   height: auto;
 
-  h3 {
-    display: inline-block;
-  }
+  &--Headline {
+    @extend %h3;
 
-  h4, p {
-    margin-bottom: 0;
-    text-align: left;
-    font-size: .8em;
-    line-height: 1em;
-    max-width: 10em;
+    display: inline-block;
   }
 
   &--Content {
@@ -54,6 +48,47 @@
       width: 2.3em;
       border-top: 2px solid darkgoldenrod;
       margin: 1em 0 1em 3em;
+    }
+
+    &__Name {
+      font-size: .8em;
+    }
+
+    &__Name,
+    &__Strasse,
+    &__Ort {
+      margin-bottom: 0;
+      text-align: left;
+      line-height: 1.2em;
+      max-width: 10em;
+    }
+
+    &__Strasse,
+    &__Ort {
+      display: inline-block;
+      text-indent: -9999px;
+      line-height: 0;
+      font-size: 1em;
+    }
+
+    &__Strasse:after,
+    &__Ort:after {
+      display: block;
+      color: #3f3f3f;
+      height: auto;
+      margin: 0;
+      text-indent: initial;
+
+      line-height: 1.2em;
+    }
+
+
+    &__Strasse:after {
+      content: '\004A\006F\0068\0061\006E\006E\0065\0073\002D\0047\0065\006C\006C\0065\0072\002D\0053\0074\0072\002E\0020\0032'
+    }
+
+    &__Ort:after {
+      content: '\0034\0031\0034\0036\0032\0020\004E\0065\0075\0073\0073'
     }
   }
 

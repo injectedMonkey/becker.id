@@ -3,6 +3,10 @@
     line-height: -2em;
   }
 
+  &--Headline {
+    @extend %h3;
+  }
+
   &--Image {
     margin: calc(320vw/60 * -1) -50% 0 0;
     filter: grayscale(100);
