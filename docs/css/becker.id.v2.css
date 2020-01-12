@@ -271,8 +271,10 @@ html {
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%; }
   html {
-    font-size: 16px;
-    font-size: calc(16px + 6 * ((100vw - 375px) / 825)); }
+    font-size: 16px; }
+    @media screen and (min-width: 375px) {
+      html {
+        font-size: calc(16px + 6 * ((100vw - 375px) / 825)); } }
     @media screen and (min-width: 1200px) {
       html {
         font-size: 22px; } }
@@ -294,8 +296,10 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 2.0736rem; }
   h1 {
-    font-size: 33.1776px;
-    font-size: calc(33.1776px + 12.52 * ((100vw - 375px) / 825)); }
+    font-size: 33.1776px; }
+    @media screen and (min-width: 375px) {
+      h1 {
+        font-size: calc(33.1776px + 12.52 * ((100vw - 375px) / 825)); } }
     @media screen and (min-width: 1200px) {
       h1 {
         font-size: 45.6976px; } }
@@ -303,8 +307,10 @@ h1 {
 h2 {
   font-size: 1.728rem; }
   h2 {
-    font-size: 27.648px;
-    font-size: calc(27.648px + 7.504 * ((100vw - 375px) / 825)); }
+    font-size: 27.648px; }
+    @media screen and (min-width: 375px) {
+      h2 {
+        font-size: calc(27.648px + 7.504 * ((100vw - 375px) / 825)); } }
     @media screen and (min-width: 1200px) {
       h2 {
         font-size: 35.152px; } }
@@ -312,8 +318,10 @@ h2 {
 h3 {
   font-size: 1.44rem; }
   h3 {
-    font-size: 23.04px;
-    font-size: calc(23.04px + 4 * ((100vw - 375px) / 825)); }
+    font-size: 23.04px; }
+    @media screen and (min-width: 375px) {
+      h3 {
+        font-size: calc(23.04px + 4 * ((100vw - 375px) / 825)); } }
     @media screen and (min-width: 1200px) {
       h3 {
         font-size: 27.04px; } }
@@ -321,8 +329,10 @@ h3 {
 h4 {
   font-size: 1.2rem; }
   h4 {
-    font-size: 19.2px;
-    font-size: calc(19.2px + 1.6 * ((100vw - 375px) / 825)); }
+    font-size: 19.2px; }
+    @media screen and (min-width: 375px) {
+      h4 {
+        font-size: calc(19.2px + 1.6 * ((100vw - 375px) / 825)); } }
     @media screen and (min-width: 1200px) {
       h4 {
         font-size: 20.8px; } }
@@ -331,8 +341,10 @@ h5 {
   font-size: 1rem;
   font-weight: 400; }
   h5 {
-    font-size: 16px;
-    font-size: calc(16px + 6 * ((100vw - 375px) / 825)); }
+    font-size: 16px; }
+    @media screen and (min-width: 375px) {
+      h5 {
+        font-size: calc(16px + 6 * ((100vw - 375px) / 825)); } }
     @media screen and (min-width: 1200px) {
       h5 {
         font-size: 22px; } }
@@ -341,8 +353,10 @@ p {
   text-align: justify;
   font-size: 1rem; }
   p {
-    font-size: 16px;
-    font-size: calc(16px + 6 * ((100vw - 375px) / 825)); }
+    font-size: 16px; }
+    @media screen and (min-width: 375px) {
+      p {
+        font-size: calc(16px + 6 * ((100vw - 375px) / 825)); } }
     @media screen and (min-width: 1200px) {
       p {
         font-size: 22px; } }
@@ -366,6 +380,61 @@ p {
     .ProfileImage--Image.Jonathan {
       left: 5%;
       top: -2em; }
+
+.Timeline {
+  list-style-type: none; }
+  .Timeline {
+    font-size: 16px; }
+    @media screen and (min-width: 375px) {
+      .Timeline {
+        font-size: calc(16px + 6 * ((100vw - 375px) / 825)); } }
+    @media screen and (min-width: 1200px) {
+      .Timeline {
+        font-size: 22px; } }
+  .Timeline .Timeline {
+    margin-left: -1.5em;
+    padding-left: .05em;
+    background: #fff; }
+  .TimelineItem {
+    position: relative;
+    border-left: 1px solid #282828;
+    padding: .1em 0 0 1.4em; }
+    .TimelineItem:after {
+      content: '';
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' viewBox='0 0 32 32' focusable='false'%3E%3Ccircle stroke='none' fill='%23e8aa0d' cx='16' cy='16' r='10'%3E%3C/circle%3E%3C/svg%3E");
+      background-position-y: center;
+      background-repeat: no-repeat;
+      background-color: #fff;
+      border: 0.2em solid #fff;
+      border-radius: 50%;
+      position: absolute;
+      left: -.5em;
+      top: calc((16px + 6 * ((100vw - 375px) / 825)) / 2);
+      margin-top: -.1em;
+      height: 1em;
+      width: 1em;
+      z-index: 2; }
+    .TimelineItem .TimelineItem:after {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' viewBox='0 0 32 32' focusable='false'%3E%3Ccircle stroke='none' fill='%23a9a9a9' cx='16' cy='16' r='10'%3E%3C/circle%3E%3C/svg%3E"); }
+    .TimelineItem:first-child:before {
+      background: #fff;
+      content: '';
+      width: 1em;
+      height: .5em;
+      position: absolute;
+      top: 0;
+      left: -.5em; }
+    .TimelineItem:last-child:before {
+      background: #fff;
+      content: '';
+      width: 1em;
+      height: .5em;
+      position: absolute;
+      bottom: 0;
+      left: -.5em; }
+    .TimelineItem .TimelineItem:before {
+      background: none;
+      height: 0; }
 
 /*
   xs: 0,

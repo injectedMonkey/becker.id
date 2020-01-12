@@ -1,5 +1,6 @@
 @import "utils/functions";
 @import "utils/mixins";
+@import "utils/variables";
 
 @import "vendor/bootstrap/functions";
 @import "vendor/bootstrap/variables";
@@ -9,8 +10,11 @@
 
 
 @import 'vendor/preset';
+
 @import 'elements/typography/index';
 @import 'elements/profile_image/index';
+
+@import 'modules/timeline/index';
 
 
 
