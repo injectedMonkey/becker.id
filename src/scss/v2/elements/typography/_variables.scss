@@ -1,0 +1,15 @@
+// Fonts
+$font_system_sans_serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font_custom: 'Catamaran';
+$font_custom_alt: 'Source Sans Pro';
+$font_sans_serif: $font_system_sans_serif;
+
+$min_width: 375px;
+$max_width: 1200px;
+$min_font: 16px;
+$max_font: 22px;
+
+$line_mod: 1.4;
+
+$mod_1: 1.2; // mobile
+$mod_2: 1.3; // desktop

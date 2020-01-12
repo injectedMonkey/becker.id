@@ -1,6 +1,3 @@
-const sass = require('node-sass');
-const Fiber = require('fibers');
-
 module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
 
@@ -42,7 +39,7 @@ module.exports = function(grunt) {
         processhtml: {
             dist: {
                 files: {
-                    'docs/index_pre.html': ['src/index.html']
+                    'docs/index_pre.html': ['src/index_v1.html']
                 }
             }
         },
@@ -61,14 +58,18 @@ module.exports = function(grunt) {
         },
         sass: {
             options: {
-                implementation: sass,
-                fiber: Fiber,
+                implementation: require('node-sass'),
+                fiber: require('fibers'),
                 sourceMap: false
             },
             dist: {
                 files: {
-                    'docs/css/<%= pkg.name %>.css': 'src/scss/main.scss',
-                    'docs/css/<%= pkg.name %>.behavior.css': 'src/scss/behavior.scss'
+                    // 'docs/css/<%= pkg.name %>.v1.css': 'src/scss/v1/main.scss',
+                    // 'docs/css/<%= pkg.name %>.v1.behavior.css': 'src/scss/v1/behavior.scss',
+
+                    'docs/css/<%= pkg.name %>.v2.css': 'src/scss/v2/main.scss',
+                    'docs/css/<%= pkg.name %>.v2.behavior.css': 'src/scss/v2/behavior.scss',
+                    'docs/css/<%= pkg.name %>.v2.dev.css': 'src/scss/v2/dev.scss'
                 }
             }
         },
@@ -78,12 +79,17 @@ module.exports = function(grunt) {
                 roundingPrecision: -1
             },
             target: {
-                files: {
-                    'docs/css/<%= pkg.name %>.min.css': [
-                        'docs/css/<%= pkg.name %>.css',
-                        'docs/css/<%= pkg.name %>.behavior.css',
+                files: [{
+                    'docs/css/<%= pkg.name %>.v1.min.css': [
+                        'docs/css/<%= pkg.name %>.v1.css',
+                        'docs/css/<%= pkg.name %>.v1.behavior.css',
+                    ],
+                }, {
+                    'docs/css/<%= pkg.name %>.v2.min.css': [
+                        'docs/css/<%= pkg.name %>.v2.css',
+                        'docs/css/<%= pkg.name %>.v2.behavior.css',
                     ]
-                }
+                }]
             }
         },
         responsive_images: {
@@ -169,7 +175,10 @@ module.exports = function(grunt) {
             },
             css: {
                 files: 'src/scss/**/*.scss',
-                tasks: ['sass', 'cssmin']
+                tasks: [
+                    'sass',
+                    // 'cssmin'
+                ]
             },
             html: {
                 files: 'src/**/*.html',
@@ -208,7 +217,7 @@ module.exports = function(grunt) {
                     '!**/*behavior*.css',
                     '!**/*.min.css',
                 ],
-                html: ['index.html']
+                html: ['index_v1.html']
             }
         },
         critical: {
@@ -255,6 +264,12 @@ module.exports = function(grunt) {
         'postcss',
         'cssmin',
         'critical'
+    ]);
+
+    grunt.registerTask('img', [
+        'responsive_images',
+        'image',
+        'cwebp',
     ]);
 
     grunt.registerTask('build', [

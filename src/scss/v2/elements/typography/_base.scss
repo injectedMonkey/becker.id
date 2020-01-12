@@ -1,0 +1,22 @@
+html {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
+  font-family: sans-serif;
+  line-height: 1.15; /* 1 */
+
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: #{$font_sans_serif};
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}

@@ -1,0 +1,94 @@
+@import "../vendor/bootstrap/functions";
+@import "../vendor/bootstrap/variables";
+@import "../vendor/bootstrap/mixins/breakpoints";
+
+/*
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
+*/
+
+#Dev {
+  position: fixed;
+  display: block;
+  bottom: 0;
+  left: 0;
+  min-width: 100px;
+  height: 25px;
+  color: #fff;
+  z-index: 1000;
+  font-size: 16px;
+
+  background: #6610f2;
+
+  @include media-breakpoint-up(sm) {
+    background: #007bff;
+  }
+
+  @include media-breakpoint-up(md) {
+    background: #17a2b8;
+  }
+
+  @include media-breakpoint-up(lg) {
+    color: black;
+    background: #88E6BC;
+  }
+
+  @include media-breakpoint-up(xl) {
+    background: #20c997;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    background: #28a745;
+  }
+
+
+  &:before {
+    display: inline-block;
+    height: 100%;
+    padding: 5px;
+    content: 'breakpoint: XS (#{map-get($grid-breakpoints, "xs")}-#{map-get($grid-breakpoints, "sm")})';
+
+    @include media-breakpoint-up(sm) {
+      content: 'breakpoint: SM (#{map-get($grid-breakpoints, "sm")}-#{map-get($grid-breakpoints, "md")})';
+    }
+
+    @include media-breakpoint-up(md) {
+      content: 'breakpoint: MD (#{map-get($grid-breakpoints, "md")}-#{map-get($grid-breakpoints, "lg")})';
+    }
+
+    @include media-breakpoint-up(lg) {
+      content: 'breakpoint: LG (#{map-get($grid-breakpoints, "lg")}-#{map-get($grid-breakpoints, "xl")})';
+    }
+
+    @include media-breakpoint-up(xl) {
+      content: 'breakpoint: XL (#{map-get($grid-breakpoints, "xl")}-#{map-get($grid-breakpoints, "xxl")})';
+    }
+
+    @include media-breakpoint-up(xxl) {
+      content: 'breakpoint: XXL (#{map-get($grid-breakpoints, "xxl")} and greater)';
+    }
+  }
+
+  &:after {
+    display: inline-block;
+    height: 100%;
+    padding: 5px;
+    content: '@1';
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+      content: '@2';
+      color: #000;
+      background: #fd7e14;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 3) {
+      content: '@3';
+      color: #000;
+      background: #ffc107;
+    }
+  }
+}
