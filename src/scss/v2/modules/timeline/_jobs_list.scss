@@ -1,0 +1,35 @@
+.Timeline__Experience {
+  width: 100%;
+  margin-left: 33.333%;
+
+  & .Timeline {
+    margin-top: .7em;
+  }
+
+  &--Employer {
+    display: block;
+    margin-bottom: .4em;
+  }
+
+  &--EmployerCity,
+  &--JobTime {
+    display: inline-block;
+    width: 33.333%;
+    margin-left: -33.333%;
+    text-align: right;
+    padding-right: 4em;
+    $mod: 0.7;
+    @include fluid-type($min_width, $max_width, $mod*$min_font, $mod*$max_font);
+  }
+
+  &--EmployerName {
+    font-weight: 300;
+  }
+
+  &--EmployerName__Subline {
+    display: block;
+    line-height: 1em;
+    font-weight: 400;
+    @extend %copy_small;
+  }
+}

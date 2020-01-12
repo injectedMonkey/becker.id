@@ -4,23 +4,23 @@
 }
 
 %h1 {
-  font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem;
-  @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2*$mod_2 *$min_font);
+  font-size: $mod_mobile*$mod_mobile*$mod_mobile*$mod_mobile *1rem;
+  @include fluid-type($min_width, $max_width, $mod_mobile*$mod_mobile*$mod_mobile*$mod_mobile *$min_font, $mod_desktop*$mod_desktop*$mod_desktop*$mod_desktop *$min_font);
 }
 
 %h2 {
-  font-size: $mod_1*$mod_1*$mod_1 *1rem;
-  @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
+  font-size: $mod_mobile*$mod_mobile*$mod_mobile *1rem;
+  @include fluid-type($min_width, $max_width, $mod_mobile*$mod_mobile*$mod_mobile *$min_font, $mod_desktop*$mod_desktop*$mod_desktop *$min_font);
 }
 
 %h3 {
-  font-size: $mod_1*$mod_1 *1rem;
-  @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font);
+  font-size: $mod_mobile*$mod_mobile *1rem;
+  @include fluid-type($min_width, $max_width, $mod_mobile*$mod_mobile *$min_font, $mod_desktop*$mod_desktop *$min_font);
 }
 
 %h4 {
-  font-size: $mod_1*1rem;
-  @include fluid-type($min_width, $max_width, $mod_1 *$min_font, $mod_2 *$min_font);
+  font-size: $mod_mobile*1rem;
+  @include fluid-type($min_width, $max_width, $mod_mobile *$min_font, $mod_desktop *$min_font);
 }
 
 %h5 {

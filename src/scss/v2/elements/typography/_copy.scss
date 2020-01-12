@@ -5,5 +5,5 @@
 }
 
 %copy_small {
-
+  @include fluid-type($min_width, $max_width, $mod_small*$min_font, $mod_small*$max_font);
 }
