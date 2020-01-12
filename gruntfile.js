@@ -65,10 +65,10 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     // 'docs/css/<%= pkg.name %>.v1.css': 'src/scss/v1/main.scss',
-                    // 'docs/css/<%= pkg.name %>.v1.behavior.css': 'src/scss/v1/behavior.scss',
+                    // 'docs/css/<%= pkg.name %>.v1.behavior.css': 'src/scss/v1/_behavior.scss',
 
                     'docs/css/<%= pkg.name %>.v2.css': 'src/scss/v2/main.scss',
-                    'docs/css/<%= pkg.name %>.v2.behavior.css': 'src/scss/v2/behavior.scss',
+                    'docs/css/<%= pkg.name %>.v2.behavior.css': 'src/scss/v2/_behavior.scss',
                     'docs/css/<%= pkg.name %>.v2.dev.css': 'src/scss/v2/dev.scss'
                 }
             }

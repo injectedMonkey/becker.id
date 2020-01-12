@@ -1,0 +1,24 @@
+.Logo {
+  &--Link {
+    &,
+    &:active,
+    &:hover,
+    &:visited {
+      color: $text_header;
+      text-decoration: none;
+    }
+  }
+
+  &--Accent {
+    color: $gold;
+    font-weight: 400;
+  }
+
+  &--Upper {
+    text-transform: uppercase;
+  }
+
+  &--Unselectable {
+    user-select: none;
+  }
+}

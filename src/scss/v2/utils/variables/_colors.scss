@@ -4,6 +4,7 @@ $gray: #a9a9a9;
 $darkgray: #282828;
 
 $gold: #e8aa0d;
+$darkgolden: #b8860b;
 
 $ocher: #e6bc78;
 $orange: #e6845c;
@@ -11,8 +12,10 @@ $green: #88e6bc;
 $blue: #68b8f2;
 
 $text: $darkgray !default;
+$text_header: $white !default;
 
 $background: $white !default;
 $background_alt: $lightgray !default;
+$background_header: $darkgray !default;
 
 $accent: $gold !default;
