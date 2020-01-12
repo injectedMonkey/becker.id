@@ -1,0 +1,30 @@
+.Welcome {
+  background: rgb(51,51,51);
+  background: linear-gradient(0deg, rgba(51,51,51,1) 0%, rgba(51,51,51,1) 46%, rgba(136,136,136,1) 100%);
+
+  &--Text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin: -25% 1em 0;
+    z-index: 2;
+    color: $white;
+    width: 100%;
+
+    @extend %h1;
+
+    @include media-breakpoint-up(md) {
+      left: 50%;
+      margin: 0;
+    }
+
+    &Subline {
+      display: block;
+      @extend %h3;
+    }
+
+    &Blink__White {
+      animation: 1s blink__white step-end infinite;
+    }
+  }
+}

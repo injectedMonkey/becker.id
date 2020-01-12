@@ -1,0 +1,9 @@
+.MoodImage {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  filter: brightness(0.25);
+  transform: translate(-50%, 0);
+}
