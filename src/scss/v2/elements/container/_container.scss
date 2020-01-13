@@ -1,0 +1,36 @@
+.ContentContainer {
+  padding: 1em;
+  z-index: 1;
+  max-width: 100%;
+
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+
+    padding: 1em 10vw;
+    max-height: calc(100vh - 70px);
+    margin-top: 45px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: 1024px;
+    padding: 1em 0;
+  }
+
+  .fp-enabled & {
+    padding-right: calc(34px + 2.6vw);
+
+    @include media-breakpoint-up(md) {
+      margin-right: -50%;
+    }
+  }
+
+  @media print {
+    position: static;
+    margin: 0;
+    transform: none;
+  }
+}
