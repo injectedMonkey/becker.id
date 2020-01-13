@@ -8,3 +8,16 @@ body.raw {
     margin: 3em 0;
   }
 }
+
+.fullsize {
+  height: 100vh;
+  width: 100vw;
+
+  &.bg {
+    background: #6610f2;
+  }
+}
+
+.Container {
+  background: #f23542;
+}

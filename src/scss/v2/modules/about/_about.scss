@@ -1,0 +1,36 @@
+.About {
+  &--Headline {
+    @extend %h3;
+  }
+
+  &--Image  {
+    max-width: 280px;
+    max-height: 280px;
+
+    left: 50%;
+    position: relative;
+    margin-right: -50%;
+    margin-top: 2em;
+    transform: translateX(-50%);
+  }
+
+  @include media-breakpoint-up(xl) {
+    &--Container {
+      display: flex;
+    }
+
+    &--Text {
+      order: 1;
+      width: calc(95% - 320px);
+    }
+
+    &--Image  {
+      position: static;
+      margin-right: 0;
+      margin-left: auto;
+      transform: none;
+      order: 2;
+      margin-top: 2.5em;
+    }
+  }
+}

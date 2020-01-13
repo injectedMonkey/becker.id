@@ -1,0 +1,23 @@
+
+.Skills {
+  &--Headline {
+    @extend %h3;
+
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  &--TechStack {
+    padding: 2em .5em;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+
+  &--HeadlineList {
+    text-indent: -9999px;
+    line-height: 1px;
+    margin: 0;
+  }
+}

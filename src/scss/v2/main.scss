@@ -13,14 +13,19 @@
 
 @import 'keyframes/index';
 @import 'quarks/index';
+
 @import 'elements/typography/index';
+@import 'elements/container/index';
 @import 'elements/profile_image/index';
 
 @import 'modules/navigation/index';
+@import 'modules/about/index';
 @import 'modules/timeline/index';
 @import 'modules/mood_image/index';
-
+@import 'modules/skills/index';
 
 @import "behavior";
+
+@import "vendor/fullpage";
 
 @import '__dev_helpers/index';
