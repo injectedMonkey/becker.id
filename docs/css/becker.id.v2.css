@@ -319,7 +319,7 @@ body {
   text-align: left;
   background-color: #fff; }
 
-.Welcome--Text, h1, h2, .About--Headline, .Welcome--TextSubline, .Skills--Headline, h3, .Skills--HeadlineBox, h4, h5 {
+.Welcome--Text, h1, h2, .About--Headline, .Welcome--TextSubline, .Skills--Headline, .Contact--Headline, h3, .Skills--HeadlineBox, h4, h5 {
   line-height: 1.2;
   font-weight: 200; }
 
@@ -345,15 +345,15 @@ h2 {
       h2 {
         font-size: 35.152px; } }
 
-.About--Headline, .Welcome--TextSubline, .Skills--Headline, h3 {
+.About--Headline, .Welcome--TextSubline, .Skills--Headline, .Contact--Headline, h3 {
   font-size: 1.44rem; }
-  .About--Headline, .Welcome--TextSubline, .Skills--Headline, h3 {
+  .About--Headline, .Welcome--TextSubline, .Skills--Headline, .Contact--Headline, h3 {
     font-size: 23.04px; }
     @media screen and (min-width: 375px) {
-      .About--Headline, .Welcome--TextSubline, .Skills--Headline, h3 {
+      .About--Headline, .Welcome--TextSubline, .Skills--Headline, .Contact--Headline, h3 {
         font-size: calc(23.04px + 4 * ((100vw - 375px) / 825)); } }
     @media screen and (min-width: 1200px) {
-      .About--Headline, .Welcome--TextSubline, .Skills--Headline, h3 {
+      .About--Headline, .Welcome--TextSubline, .Skills--Headline, .Contact--Headline, h3 {
         font-size: 27.04px; } }
 
 .Skills--HeadlineBox, h4 {
@@ -945,6 +945,101 @@ p {
   text-indent: -9999px;
   line-height: 1px;
   margin: 0; }
+
+.Contact {
+  position: relative;
+  text-align: center;
+  background: none !important;
+  height: auto; }
+  .Contact--Headline {
+    display: inline-block; }
+  .Contact--Content {
+    margin: 50px 0;
+    z-index: 2;
+    position: relative;
+    padding: 15px 0 20px;
+    background-color: #fff;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+    .Contact--Content:after {
+      content: '';
+      clear: both; }
+    .Contact--ContentWrapper {
+      width: 100%;
+      max-width: 1024px;
+      display: inline-block; }
+      @media (min-width: 992px) {
+        .Contact--ContentWrapper {
+          width: auto;
+          min-width: 50%; } }
+  .Contact--Text {
+    position: relative;
+    left: 50%;
+    width: 10em;
+    transform: translateX(-50%); }
+    .Contact--Text:after {
+      content: '';
+      display: block;
+      height: 0;
+      width: 2.3em;
+      border-top: 2px solid darkgoldenrod;
+      margin: 1em calc(50% - (2.3em / 2)); }
+    .Contact--Text__Name {
+      font-size: .8em; }
+    .Contact--Text__Name, .Contact--Text__Strasse, .Contact--Text__Ort {
+      margin-bottom: 0;
+      text-align: left;
+      line-height: 1.2em; }
+    .Contact--Text__Strasse, .Contact--Text__Ort {
+      display: inline-block;
+      text-indent: -9999px;
+      line-height: 0;
+      font-size: 1em; }
+    .Contact--Text__Strasse:after, .Contact--Text__Ort:after {
+      display: block;
+      color: #3f3f3f;
+      height: auto;
+      margin: 0;
+      text-indent: initial;
+      line-height: 1.2em; }
+    .Contact--Text__Strasse:after {
+      content: '\004A\006F\0068\0061\006E\006E\0065\0073\002D\0047\0065\006C\006C\0065\0072\002D\0053\0074\0072\002E\0020\0032'; }
+    .Contact--Text__Ort:after {
+      content: '\0034\0031\0034\0036\0032\0020\004E\0065\0075\0073\0073'; }
+  .Contact--Imprint {
+    position: relative;
+    text-align: center;
+    font-size: small;
+    z-index: 2;
+    bottom: 0;
+    background-color: #3f3f3f;
+    color: #fff;
+    margin: 30px -50px -62px;
+    padding: 20px 0;
+    border-top: 2px solid darkgoldenrod; }
+  .Contact--Print, .Contact--Mail, .Contact--Xing, .Contact--Linkedin {
+    font-size: 1em;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    display: inline-block;
+    margin: .2em 1em;
+    transition: all 250ms cubic-bezier(0.25, 0.8, 0.25, 1);
+    color: #3f3f3f;
+    text-indent: -10000px;
+    text-align: unset;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(0.5) grayscale(1); }
+    .Contact--Print:hover, .Contact--Print:active, .Contact--Mail:hover, .Contact--Mail:active, .Contact--Xing:hover, .Contact--Xing:active, .Contact--Linkedin:hover, .Contact--Linkedin:active {
+      cursor: pointer;
+      filter: none; }
+  .Contact--Mail {
+    background-image: url("https://api.iconify.design/fa-envelope.svg?color=%23b8860b"); }
+  .Contact--Xing {
+    background-image: url("https://api.iconify.design/fa-brands:xing-square.svg?color=%23b8860b"); }
+  .Contact--Linkedin {
+    background-image: url("https://api.iconify.design/fa-brands:linkedin.svg?color=%23b8860b"); }
 
 .Navigation--Input:checked + .Navigation--Burger .Navigation--BurgerLine:nth-child(1) {
   transform: translateY(10px) rotate(-45deg); }

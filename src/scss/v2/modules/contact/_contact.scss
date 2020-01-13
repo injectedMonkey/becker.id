@@ -38,7 +38,7 @@
   &--Text {
     position: relative;
     left: 50%;
-    width: 8em;
+    width: 10em;
     transform: translateX(-50%);
 
     &:after {
@@ -47,7 +47,7 @@
       height:0;
       width: 2.3em;
       border-top: 2px solid darkgoldenrod;
-      margin: 1em 0 1em 3em;
+      margin: 1em calc(50% - (2.3em / 2));
     }
 
     &__Name {
@@ -60,7 +60,6 @@
       margin-bottom: 0;
       text-align: left;
       line-height: 1.2em;
-      max-width: 10em;
     }
 
     &__Strasse,
