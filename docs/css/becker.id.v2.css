@@ -745,7 +745,7 @@ p {
   border-top: 2px solid #e8aa0d;
   text-align: center;
   background: #fff; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .Skills--Container {
       box-shadow: none;
       border: none;
@@ -756,7 +756,7 @@ p {
   display: inline-block;
   text-align: left;
   margin-left: -1em; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .Skills--HeadlineBox {
       text-align: center;
       margin-left: 0; } }
@@ -773,7 +773,7 @@ p {
     position: relative;
     top: 10px;
     left: -1.6em; }
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       .Skills--Frontend:before, .Skills--Backend:before, .Skills--Devops:before {
         position: absolute;
         height: 6em;
@@ -789,12 +789,12 @@ p {
     border-bottom: 1px solid #a9a9a9;
     width: 90%;
     margin: 1em 5% 0; }
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       .Skills--Frontend:after, .Skills--Backend:after, .Skills--Devops:after {
         display: none; } }
   .Skills--Frontend:last-child:after, .Skills--Backend:last-child:after, .Skills--Devops:last-child:after {
     border: none; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .Skills--Frontend, .Skills--Backend, .Skills--Devops {
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
       transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -804,18 +804,18 @@ p {
       .Skills--Frontend:hover, .Skills--Backend:hover, .Skills--Devops:hover {
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); } }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .Skills--Frontend {
     width: 32%;
     order: 1; } }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .Skills--Backend {
     width: 32%;
     order: 2;
     margin: 0 2%; } }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .Skills--Devops {
     width: 32%;
     order: 3; } }
@@ -902,7 +902,7 @@ p {
   justify-content: space-around;
   width: 25%;
   margin-left: 38.5%; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .Chart {
       width: 70%;
       margin-left: 15%; } }
@@ -912,7 +912,7 @@ p {
   max-height: 140px;
   height: 100%;
   width: 100%; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .Chart__Circle {
       margin: 30px auto auto;
       max-height: 300px; } }

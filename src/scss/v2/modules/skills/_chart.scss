@@ -3,7 +3,7 @@
   width: 25%;
   margin-left: 38.5%;
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     width: 70%;
     margin-left: 15%;
   }
@@ -15,7 +15,7 @@
   height: 100%;
   width: 100%;
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     margin: 30px auto auto;
     max-height: 300px;
   }
