@@ -1,23 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Becker &ndash; Web Engineer &amp; Full Stack Software Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://api.iconify.design">
+    <link rel="canonical" href="https://becker.id/" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="/favicon-194x194.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#b8860b">
+
+    <meta name="keywords"    content="Jonathan, Becker, Portfolio, Web, Developer, Software, Engineer, PHP, " />
+    <meta name="description" content="Hallo, mein Name ist Jonathan Becker und ich bin leidenschaftlicher Web Engineer und Full Stack Developer für PHP & Javascript Applikationen." />
+    <meta name="robots"      content="index, follow" />
+    <meta name="theme-color" content="#3f3f3f" />
+
+    <meta name="msapplication-TileColor" content="#b8860b">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#333333">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/becker.id.v2.css" />
 </head>
-<body>
-<ul>
-    <li><a href="index_v1.html">Version 1</a><br><br></li>
+<body class="no-js">
+    <div id="Page" class="PageWrapper">
+        <header class="Header">
+            <div class="Header--Logo Logo">
+                <a rel="next" href="#WelcomeSection" class="Logo--Link has-anchor">
+                    <span class="Logo--Unselectable">&lt;</span>jonathan<span class="Logo--Accent">@</span><strong>becker<span class="Logo--Accent">.</span><span class="Logo--Upper">id</span></strong><span class="Logo--Unselectable">&gt;</span>
+                </a>
+            </div>
+            <nav class="Header--Navigation Navigation">
+                <input type="checkbox" id="Navigation--Input" class="Navigation--Input">
+                <label for="Navigation--Input" class="Navigation--Burger">
+                    <span class="Navigation--BurgerLine"></span>
+                    <span class="Navigation--BurgerLine"></span>
+                    <span class="Navigation--BurgerLine"></span>
+                </label>
+                <ul class="Navigation--List">
+                    <li class="Navigation--Item">
+                        <a class="Navigation--Link has-anchor" href="#AboutSection">Über mich</a>
+                    </li>
 
-    <li><a href="typography.html">Typography</a></li>
-    <li><a href="container.html">Container</a></li>
-    <li><a href="profile_image.html">Profil Bild</a></li>
-    <li><a href="timeline.html">Timeline</a></li>
-    <li><a href="navigation.html">Navigation</a></li>
-    <li><a href="mood.html">Mood</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="skills.html">Skills</a></li>
-    <li><a href="contact.html">Contact</a></li>
-</ul>
+                    <li class="Navigation--Item">
+                        <a class="Navigation--Link has-anchor" href="#SkillsSection">Skill Set</a>
+                    </li>
 
+                    <li class="Navigation--Item">
+                        <a class="Navigation--Link has-anchor" href="#ExperienceSection">Erfahrung</a>
+                    </li>
+
+                    <li class="Navigation--Item">
+                        <a class="Navigation--Link has-anchor" href="#ContactSection">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section id="WelcomeSection" class="Welcome section">
+<!--            <div class="ContentContainer">-->
+                <h1 class="Welcome--Text">
+                    <span class="Welcome--TextSubline">Jonathan Becker</span> Web Engineer &amp; <br>Full Stack Developer<span class="Welcome--TextBlink__White">_</span>
+                </h1>
+<!--            </div>-->
+
+            <picture>
+                <source media="(min-width: 1140px)" srcset="images/mood/mood-1140.webp 1x, images/mood/mood-2280-x2.webp 2x" type="image/webp">
+                <source media="(min-width: 1140px)" srcset="images/mood/mood-1140.jpg 1x, images/mood/mood-2280-x2.jpg 2x">
+
+                <source media="(min-width: 960px)" srcset="images/mood/mood-960.webp 1x, images/mood/mood-1920-x2.webp 2x" type="image/webp">
+                <source media="(min-width: 960px)" srcset="images/mood/mood-960.jpg 1x, images/mood/mood-1920-x2.jpg 2x">
+
+                <source media="(min-width: 720px)" srcset="images/mood/mood-720.webp 1x images/mood/mood-1440-x2.webp 2x" type="image/webp">
+                <source media="(min-width: 720px)" srcset="images/mood/mood-720.jpg 1x images/mood/mood-1440-x2.jpg 2x">
+
+                <source srcset="images/mood/mood-540.webp 1x, images/mood/mood-1080-x2.webp 2x" type="image/webp">
+                <source srcset="images/mood/mood-540.jpg 1x, images/mood/mood-1080-x2.jpg 2x">
+
+                <img class="MoodImage" alt="Desk" src="images/mood/mood-540.jpg" />
+            </picture>
+
+            <a class="Welcome--ArrowDown has-anchor" rel="next" href="#AboutSection">Weiter</a>
+        </section>
+        <section id="AboutSection" class="About section">
+            <div class="ContentContainer">
+                <div class="About--Container">
+                    <div class="About--Text">
+                        <h2 class="About--Headline">Hallo, mein Name ist <br>
+                            Jonathan Becker</h2>
+                        <p>und ich bin leidenschaftlicher <strong>Web Engineer</strong> und <strong>Full Stack Developer</strong>. Seit mehr als 10 Jahren widme ich mich der professionellen Entwicklung von auf PHP und Javascript basierenden Web-Anwen­dungen. Von der Konzeption und Entwicklung von Front- und Backend Applikationen über die Planung und den Betrieb der passenden Infrastruktur und der Begleitung des gesamten Life Cycle einer Software kann ich mit meiner Erfahrung und meiner "Hands On" Mentalität auch in Ihrem Projekt die nötigen Impulse setzen.</p>
+                    </div>
+                    <div class="About--Image ProfileImage">
+                        <picture>
+                            <source media="(min-width: 1140px)" srcset="images/profile/Jonathan-540.webp 1x, images/profile/Jonathan-1080-x2.webp 2x" type="image/webp">
+                            <source media="(min-width: 1140px)" srcset="images/profile/Jonathan-540.jpg 1x, images/profile/Jonathan-1080-x2.jpg 2x">
+
+                            <source srcset="images/profile/Jonathan-320.webp 1x, images/profile/Jonathan-640-x2.webp 2x" type="image/webp">
+                            <source srcset="images/profile/Jonathan-320.jpg 1x, images/profile/Jonathan-640-x2.jpg 2x">
+
+                            <img class="ProfileImage--Image Jonathan" alt="Jonathan Becker" src="images/profile/Jonathan-320.jpg" />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="SkillsSection" class="Skills section">
+            <div class="ContentContainer">
+                <h2 class="Skills--Headline">Skill Set</h2>
+
+                <div class="Skills--Container">
+                    <div class="Skills--Frontend">
+                        <h3 class="Skills--HeadlineBox">Frontend <br>Development</h3>
+
+                        <div class="Chart">
+                            <svg alt="Visualisierung Frontend Development Skills" width="36" height="36" viewBox="0 0 36 36" class="Chart__Circle">
+                                <path class="Chart__Circle--Background" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                <path class="Chart__Circle--Circle__Orange" stroke-dasharray="80, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <text x="18" y="21" class="Chart__Circle--Text">80</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="Skills--Backend">
+                        <h3 class="Skills--HeadlineBox">Backend <br>Development</h3>
+
+                        <div class="Chart">
+                            <svg alt="Visualisierung Backend Development Skills" width="36" height="36" viewBox="0 0 36 36" class="Chart__Circle">
+                                <path class="Chart__Circle--Background" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="Chart__Circle--Circle__Green"
+                                      stroke-dasharray="90, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <text x="18" y="21" class="Chart__Circle--Text">90</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="Skills--Devops">
+                        <h3 class="Skills--HeadlineBox">DevOps &<br>Infrastructure</h3>
+
+                        <div class="Chart">
+                            <svg alt="Visualisierung DevOps Skills" width="36" height="36" viewBox="0 0 36 36" class="Chart__Circle">
+                                <path class="Chart__Circle--Background" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="Chart__Circle--Circle__Blue" stroke-dasharray="70, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <text x="18" y="21" class="Chart__Circle--Text">70</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="Skills--TechStack">
+
+                    <h5 class="Skills--HeadlineList">Technologie Stack:</h5>
+                    <ul class="TechStack--List">
+                        <li title="HTML 5" class="TechStack--Item__Html5">HTML 5</li>
+                        <li title="CSS 3" class="TechStack--Item__Css3">CSS 3</li>
+                        <li title="Sass" class="TechStack--Item__Sass">Sass</li>
+                        <li title="Angular" class="TechStack--Item__Angular">Angular</li>
+                        <li title="Node.js" class="TechStack--Item__Nodejs">Node.js</li>
+                        <li title="PHP" class="TechStack--Item__Php">php</li>
+                        <li title="Symfony" class="TechStack--Item__Symfony">Symfony</li>
+                        <li title="MySQL" class="TechStack--Item__MySql">MySql</li>
+                        <li title="RabbitMQ" class="TechStack--Item__RabbitMq">RabbitMQ</li>
+                        <li title="GitLab" class="TechStack--Item__GitLab">GitLab</li>
+                        <li title="Ansible" class="TechStack--Item__Ansible">Ansible</li>
+                        <li title="Docker" class="TechStack--Item__Docker">Docker</li>
+                    </ul>
+                    <ul class="TechStack--List">
+                        <li title="Apple" class="TechStack--Item__Apple">Apple</li>
+                        <li title="Linux" class="TechStack--Item__Linux">Linux</li>
+                        <li title="Windows" class="TechStack--Item__Windows">Windows</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="ExperienceSection" class="Experience section">
+            <div class="ContentContainer">
+                <h2 class="Experience--Headline">Berufserfahrung</h2>
+                <ul class="Timeline Timeline__Experience">
+                    <li class="TimelineItem">
+                        <span class="Timeline__Experience--Employer">
+                            <span class="Timeline__Experience--EmployerCity">Düsseldorf</span><span class="Timeline__Experience--EmployerName">Handy.de <span class="Timeline__Experience--EmployerName__Subline">Telekommunikation GmbH</span></span>
+                        </span>
+                        <span class="Timeline__Experience--Job"><span class="Timeline__Experience--JobTime">2017&ndash;2019</span><span class="Timeline__Experience--JobTitle">Senior Software Developer</span></span>
+                    </li>
+                    <li class="TimelineItem">
+                        <span class="Timeline__Experience--Employer">
+                            <span class="Timeline__Experience--EmployerCity">Düsseldorf</span><span class="Timeline__Experience--EmployerName">preis24.de GmbH<span class="Timeline__Experience--EmployerName__Subline">ProSiebenSat1 Group</span></span>
+                        </span>
+                        <span class="Timeline__Experience--Job"><span class="Timeline__Experience--JobTime">2016&ndash;2017</span><span class="Timeline__Experience--JobTitle">Lead Developer <br>Backend Applications</span></span>
+                        <ul class="Timeline">
+                            <li class="TimelineItem">
+                                <span class="Timeline__Experience--Job"><span class="Timeline__Experience--JobTime">2014&ndash;2016</span><span class="Timeline__Experience--JobTitle">Head of Frontend <br>Development</span></span>
+                            </li>
+                            <li class="TimelineItem">
+                                <span class="Timeline__Experience--Job"><span class="Timeline__Experience--JobTime">2013</span><span class="Timeline__Experience--JobTitle">Senior Web Developer</span></span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="TimelineItem">
+                        <span class="Timeline__Experience--Employer">
+                            <span class="Timeline__Experience--EmployerCity">Köln</span><span class="Timeline__Experience--EmployerName">denkwerk GmbH</span></span>
+                        </span>
+                        <span class="Timeline__Experience--Job"><span class="Timeline__Experience--JobTime">2008&ndash;2013</span><span class="Timeline__Experience--JobTitle">Specialist Web Developer</span></span>
+                    </li>
+                    <li class="TimelineItem">
+                        <span class="Timeline__Experience--Employer">
+                            <span class="Timeline__Experience--EmployerCity">Krefeld</span><span class="Timeline__Experience--EmployerName">Reemers <span class="Timeline__Experience--EmployerName__Subline">Publishing Services GmbH</span></span>
+                        </span>
+                        <span class="Timeline__Experience--Job"><span class="Timeline__Experience--JobTime">2005&ndash;2007</span><span class="Timeline__Experience--JobTitle">Mediengestalter</span></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer id="ContactSection" class="Contact section fp-auto-height">
+            <div class="ContentContainer">
+                <div class="Contact--ContentWrapper">
+                    <div class="Contact--Content">
+                        <h2 class="Contact--Headline">Kontakt</h2>
+                        <div class="Contact--Text">
+                            <p class="Contact--Text__Name">
+                                Jonathan Becker
+                                <span class="Contact--Text__Strasse">Strasse</span>
+                                <span class="Contact--Text__Ort">Ort</span>
+                            </p>
+
+                        </div>
+                        <div class="Contact--Links">
+                            <a class="Contact--Mail" href="mailto:jonathan@becker.id">Mail</a>
+                            <a class="Contact--Xing" href="https://www.xing.com/profile/Jonathan_Becker3" target="_blank" rel="noreferrer">Xing</a>
+                            <a class="Contact--Linkedin" href="https://www.linkedin.com/in/jonathan-becker-web-engineer" target="_blank" rel="noreferrer">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Contact--Imprint">
+                &copy; Copyright 2019 &ndash; 2020, Jonathan Becker
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="js/becker.id.min.js" async></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62287796-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-62287796-2');
+    </script>
 </body>
 </html>
