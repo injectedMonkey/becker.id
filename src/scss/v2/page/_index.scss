@@ -8,9 +8,8 @@ body {
 
 .section {
   width: 100%;
+  height: 100vh;
   overflow: hidden;
-
-  padding-top: 2.3636em;
 
   @include media-breakpoint-up(md) {
     padding-top: 0;
@@ -40,4 +39,8 @@ body {
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
+}
+
+.ContentWrapper {
+  margin: 3.3636em 0 2.3636em;
 }

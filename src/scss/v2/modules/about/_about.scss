@@ -4,14 +4,24 @@
   }
 
   &--Image  {
-    max-width: 280px;
-    max-height: 280px;
+    max-width: 240px;
+    max-height: 240px;
 
     left: 50%;
     position: relative;
     margin-right: -50%;
     margin-top: 2em;
     transform: translateX(-50%);
+
+    @include media-breakpoint-up(sm) {
+      max-width: 280px;
+      max-height: 280px;
+    }
+
+    @include media-breakpoint-up(md) {
+      max-width: 320px;
+      max-height: 320px;
+    }
   }
 
   @include media-breakpoint-up(xl) {

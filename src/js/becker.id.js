@@ -4227,10 +4227,12 @@ if(window.jQuery && window.fullpage){
         navigation: true,
         navigationPosition: 'right',
         verticalCentered: false,
-        licenseKey: '8rshb7zs-e7rs7dfg-e8aef8se-e8r8sfg8'
+        licenseKey: '8rshb7zs-e7rs7dfg-e8aef8se-e8r8sfg8',
+        responsiveHeight: 800,
+        bigSectionsDestination: 'top'
     });
 
-    document.querySelector(".Header--NavigationList").onclick = function () {
-        document.getElementById('Header--MenuInput').checked = false;
+    document.querySelector(".Navigation--List").onclick = function () {
+        document.getElementById('Navigation--Input').checked = false;
     }
 })(this, this.document, this.fullpage);

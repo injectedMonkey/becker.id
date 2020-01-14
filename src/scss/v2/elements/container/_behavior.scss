@@ -1,0 +1,9 @@
+.ContentContainer {
+  .fp-enabled :not(.fp-responsive) & {
+    padding: 1em calc(34px + 2.6vw);
+
+    @include media-breakpoint-up(md) {
+      margin-right: -50%;
+    }
+  }
+}
