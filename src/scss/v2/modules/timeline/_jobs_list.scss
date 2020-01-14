@@ -1,6 +1,10 @@
 .Timeline__Experience {
-  width: 100%;
   margin-left: 33.333%;
+
+  @include media-breakpoint-up(md) {
+    margin-left: 50%;
+    width: auto;
+  }
 
   & .Timeline {
     margin-top: .7em;
@@ -14,8 +18,8 @@
   &--EmployerCity,
   &--JobTime {
     display: inline-block;
-    width: 33.333%;
-    margin-left: -33.333%;
+    width: 100%;
+    margin-left: -100%;
     text-align: right;
     padding-right: 4em;
     $mod: 0.7;

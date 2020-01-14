@@ -319,7 +319,7 @@ body {
   text-align: left;
   background-color: #fff; }
 
-.Welcome--Text, h1, h2, .About--Headline, .Welcome--TextSubline, .Skills--Headline, .Contact--Headline, h3, .Skills--HeadlineBox, h4, h5 {
+.Welcome--Text, h1, .Skills--Headline, h2, .About--Headline, .Welcome--TextSubline, .Contact--Headline, h3, .Skills--HeadlineBox, h4, h5 {
   line-height: 1.2;
   font-weight: 200; }
 
@@ -334,26 +334,26 @@ body {
       .Welcome--Text, h1 {
         font-size: 45.6976px; } }
 
-h2 {
+.Skills--Headline, h2 {
   font-size: 1.728rem; }
-  h2 {
+  .Skills--Headline, h2 {
     font-size: 27.648px; }
     @media screen and (min-width: 375px) {
-      h2 {
+      .Skills--Headline, h2 {
         font-size: calc(27.648px + 7.504 * ((100vw - 375px) / 825)); } }
     @media screen and (min-width: 1200px) {
-      h2 {
+      .Skills--Headline, h2 {
         font-size: 35.152px; } }
 
-.About--Headline, .Welcome--TextSubline, .Skills--Headline, .Contact--Headline, h3 {
+.About--Headline, .Welcome--TextSubline, .Contact--Headline, h3 {
   font-size: 1.44rem; }
-  .About--Headline, .Welcome--TextSubline, .Skills--Headline, .Contact--Headline, h3 {
+  .About--Headline, .Welcome--TextSubline, .Contact--Headline, h3 {
     font-size: 23.04px; }
     @media screen and (min-width: 375px) {
-      .About--Headline, .Welcome--TextSubline, .Skills--Headline, .Contact--Headline, h3 {
+      .About--Headline, .Welcome--TextSubline, .Contact--Headline, h3 {
         font-size: calc(23.04px + 4 * ((100vw - 375px) / 825)); } }
     @media screen and (min-width: 1200px) {
-      .About--Headline, .Welcome--TextSubline, .Skills--Headline, .Contact--Headline, h3 {
+      .About--Headline, .Welcome--TextSubline, .Contact--Headline, h3 {
         font-size: 27.04px; } }
 
 .Skills--HeadlineBox, h4 {
@@ -404,11 +404,8 @@ p {
   padding: 1em;
   z-index: 1;
   max-width: 100%;
-  height: 100%; }
-  @media (max-width: 991.98px) {
-    .ContentContainer {
-      height: initial; } }
-  @media (min-width: 992px) {
+  width: 100%; }
+  @media (min-width: 768px) {
     .ContentContainer {
       position: absolute;
       top: 50%;
@@ -641,8 +638,11 @@ p {
       left: calc(-0.375em + 1px); }
 
 .Timeline__Experience {
-  width: 100%;
   margin-left: 33.333%; }
+  @media (min-width: 768px) {
+    .Timeline__Experience {
+      margin-left: 50%;
+      width: auto; } }
   .Timeline__Experience .Timeline {
     margin-top: .7em; }
   .Timeline__Experience--Employer {
@@ -650,8 +650,8 @@ p {
     margin-bottom: .4em; }
   .Timeline__Experience--EmployerCity, .Timeline__Experience--JobTime {
     display: inline-block;
-    width: 33.333%;
-    margin-left: -33.333%;
+    width: 100%;
+    margin-left: -100%;
     text-align: right;
     padding-right: 4em; }
     .Timeline__Experience--EmployerCity, .Timeline__Experience--JobTime {
@@ -668,6 +668,10 @@ p {
     display: block;
     line-height: 1em;
     font-weight: 400; }
+
+.Experience--Headline {
+  text-align: center;
+  margin-bottom: 1em; }
 
 .MoodImage {
   position: fixed;
@@ -831,9 +835,8 @@ p {
 
 .TechStack--Item__Angular, .TechStack--Item__Html5, .TechStack--Item__Css3, .TechStack--Item__Sass, .TechStack--Item__Angular, .TechStack--Item__Nodejs, .TechStack--Item__Php, .TechStack--Item__Symfony, .TechStack--Item__MySql, .TechStack--Item__RabbitMq, .TechStack--Item__GitLab, .TechStack--Item__Ansible, .TechStack--Item__Docker, .TechStack--Item__Apple, .TechStack--Item__Linux, .TechStack--Item__Windows {
   display: inline-block;
-  height: 35px;
-  width: 55px;
-  padding: 0 .5em;
+  height: 30px;
+  width: 50px;
   margin: 0 .1em;
   cursor: pointer;
   background-size: contain;
@@ -845,10 +848,6 @@ p {
   .TechStack--Item__Angular:hover, .TechStack--Item__Html5:hover, .TechStack--Item__Css3:hover, .TechStack--Item__Sass:hover, .TechStack--Item__Angular:hover, .TechStack--Item__Nodejs:hover, .TechStack--Item__Php:hover, .TechStack--Item__Symfony:hover, .TechStack--Item__MySql:hover, .TechStack--Item__RabbitMq:hover, .TechStack--Item__GitLab:hover, .TechStack--Item__Ansible:hover, .TechStack--Item__Docker:hover, .TechStack--Item__Apple:hover, .TechStack--Item__Linux:hover, .TechStack--Item__Windows:hover {
     transform: scale(1.2);
     filter: none; }
-  @media (max-width: 1199.98px) {
-    .TechStack--Item__Angular, .TechStack--Item__Html5, .TechStack--Item__Css3, .TechStack--Item__Sass, .TechStack--Item__Angular, .TechStack--Item__Nodejs, .TechStack--Item__Php, .TechStack--Item__Symfony, .TechStack--Item__MySql, .TechStack--Item__RabbitMq, .TechStack--Item__GitLab, .TechStack--Item__Ansible, .TechStack--Item__Docker, .TechStack--Item__Apple, .TechStack--Item__Linux, .TechStack--Item__Windows {
-      height: 25px;
-      width: 40px; } }
 
 .TechStack--Item__Php {
   height: 50px;
@@ -961,12 +960,15 @@ p {
   .Contact--Headline {
     display: inline-block; }
   .Contact--Content {
-    margin: 50px 0;
+    margin: 50px 50px;
     z-index: 2;
     position: relative;
     padding: 15px 0 20px;
     background-color: #fff;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+    @media (min-width: 1200px) {
+      .Contact--Content {
+        margin: 50px 0; } }
     .Contact--Content:after {
       content: '';
       clear: both; }
@@ -974,10 +976,6 @@ p {
       width: 100%;
       max-width: 1024px;
       display: inline-block; }
-      @media (min-width: 992px) {
-        .Contact--ContentWrapper {
-          width: auto;
-          min-width: 50%; } }
   .Contact--Text {
     position: relative;
     left: 50%;
@@ -1019,7 +1017,7 @@ p {
     bottom: 0;
     background-color: #3f3f3f;
     color: #fff;
-    margin: 30px -50px 0;
+    margin: 0;
     padding: 20px 0;
     border-top: 2px solid darkgoldenrod; }
   .Contact--Print, .Contact--Mail, .Contact--Xing, .Contact--Linkedin {
@@ -1047,8 +1045,19 @@ p {
   .Contact--Linkedin {
     background-image: url("https://api.iconify.design/fa-brands:linkedin.svg?color=%23b8860b"); }
 
+body {
+  min-width: 320px; }
+
 .PageWrapper {
   overflow-x: hidden; }
+
+.section {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 2.3636em; }
+  @media (min-width: 768px) {
+    .section {
+      padding-top: 0; } }
 
 .section:nth-child(even) {
   background-color: #e3e3e3; }
@@ -1056,7 +1065,10 @@ p {
 .section:nth-child(odd) {
   background-color: #fff; }
 
-::selection,
+::selection {
+  background: #000;
+  color: #fff; }
+
 ::-moz-selection {
   background: #000;
   color: #fff; }
