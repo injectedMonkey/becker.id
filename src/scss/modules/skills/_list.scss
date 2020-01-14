@@ -1,0 +1,139 @@
+.TechStack {
+  height: 88px;
+
+  &--Heading {
+    font-size: smaller;
+    font-weight: initial;
+    display: inline;
+  }
+
+  &--List {
+    display: flex;
+    justify-content: space-between;
+    padding:0;
+    margin: 0 10px 0 0;
+    width: 100%;
+  }
+
+  &--Item {
+    &__Angular,
+    &__Html5,
+    &__Css3,
+    &__Sass,
+    &__Angular,
+    &__Nodejs,
+    &__Php,
+    &__Symfony,
+    &__MySql,
+    &__RabbitMq,
+    &__GitLab,
+    &__Ansible,
+    &__Docker,
+    &__Apple,
+    &__Linux,
+    &__Windows {
+      display: inline-block;
+      height: 30px;
+      width: 50px;
+      margin: 0;
+
+
+      cursor: pointer;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      line-height: 90px;
+      font-size: 9px;
+      text-align: center;
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+      filter: grayscale(100%) contrast(200%);
+      user-select: none;
+
+      &:hover {
+        transform: scale(1.22);
+        font-size: 11px;
+        line-height: 88px;
+        filter: none;
+      }
+
+      @include media-breakpoint-down(md) {
+        height: 25px;
+        line-height: 80px;
+        &:hover {
+          font-size: 11px;
+          line-height: 78px;
+        }
+      }
+    }
+
+    &__Php {
+      height: 50px;
+      background-position-y: -1em;
+
+      @include media-breakpoint-down(md) {
+        height: 40px;
+        background-position-y: -.8em;
+      }
+    }
+
+    &__Html5 {
+      background-image: url('https://api.iconify.design/icomoon-free:html-five.svg?color=%23e34f26');
+    }
+
+    &__Css3 {
+      background-image: url('https://api.iconify.design/logos:css-3-official.svg');
+    }
+
+    &__Sass {
+      background-image: url('https://api.iconify.design/logos:sass.svg');
+    }
+
+    &__Angular {
+      background-image: url('https://api.iconify.design/logos:angular-icon.svg');
+    }
+
+    &__Nodejs {
+      background-image: url('https://api.iconify.design/logos:nodejs-icon.svg');
+    }
+
+    &__Php {
+      background-image: url('https://api.iconify.design/mdi:language-php.svg?color=%234c6b97');
+    }
+
+    &__Symfony {
+      background-image: url('https://api.iconify.design/logos:symfony.svg');
+    }
+
+    &__MySql {
+      background-image: url('https://api.iconify.design/logos:mysql.svg');
+    }
+
+    &__RabbitMq {
+      background-image: url('https://api.iconify.design/logos:rabbitmq.svg');
+    }
+
+    &__GitLab {
+      background-image: url('https://api.iconify.design/logos:gitlab.svg');
+    }
+
+    &__Ansible {
+      background-image: url('https://api.iconify.design/simple-icons:ansible.svg');
+    }
+
+    &__Docker {
+      background-image: url('https://api.iconify.design/logos:docker-icon.svg');
+    }
+
+    &__Apple {
+      background-image: url('https://api.iconify.design/logos:apple.svg');
+    }
+
+    &__Linux {
+      background-image: url('https://api.iconify.design/logos:linux-tux.svg');
+    }
+
+    &__Windows {
+      background-image: url('https://api.iconify.design/logos:microsoft-windows.svg');
+    }
+  }
+}

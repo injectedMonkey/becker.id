@@ -4229,6 +4229,7 @@ if(window.jQuery && window.fullpage){
         verticalCentered: false,
         licenseKey: '8rshb7zs-e7rs7dfg-e8aef8se-e8r8sfg8',
         responsiveHeight: 800,
+        // responsiveWidth: 768,
         bigSectionsDestination: 'top'
     });
 

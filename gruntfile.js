@@ -21,6 +21,12 @@ module.exports = function(grunt) {
             html: {
                 expand: true,
                 flatten: true,
+                src: ['src/*.html', '!src/favicon/**/*.html'],
+                dest: 'docs/'
+            },
+            dev: {
+                expand: true,
+                flatten: true,
                 src: ['src/**/*.html', '!src/favicon/**/*.html'],
                 dest: 'docs/'
             }
@@ -32,14 +38,7 @@ module.exports = function(grunt) {
                     collapseWhitespace: true
                 },
                 files: {
-                    'docs/index.html': 'docs/index_pre.html'
-                }
-            }
-        },
-        processhtml: {
-            dist: {
-                files: {
-                    'docs/index_pre.html': ['src/index_v1.html']
+                    'docs/index.html': 'docs/index.html'
                 }
             }
         },
@@ -64,12 +63,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    // 'docs/css/<%= pkg.name %>.v1.css': 'src/scss/v1/main.scss',
-                    // 'docs/css/<%= pkg.name %>.v1.behavior.css': 'src/scss/v1/_behavior.scss',
-
-                    'docs/css/<%= pkg.name %>.v2.css': 'src/scss/v2/main.scss',
-                    'docs/css/<%= pkg.name %>.v2.behavior.css': 'src/scss/v2/_behavior.scss',
-                    'docs/css/<%= pkg.name %>.v2.dev.css': 'src/scss/v2/dev.scss'
+                    'docs/css/<%= pkg.name %>.css': 'src/scss/main.scss'
                 }
             }
         },
@@ -80,15 +74,9 @@ module.exports = function(grunt) {
             },
             target: {
                 files: [{
-                    'docs/css/<%= pkg.name %>.v1.min.css': [
-                        'docs/css/<%= pkg.name %>.v1.css',
-                        'docs/css/<%= pkg.name %>.v1.behavior.css',
+                    'docs/css/<%= pkg.name %>.min.css': [
+                        'docs/css/<%= pkg.name %>.css',
                     ],
-                }, {
-                    'docs/css/<%= pkg.name %>.v2.min.css': [
-                        'docs/css/<%= pkg.name %>.v2.css',
-                        'docs/css/<%= pkg.name %>.v2.behavior.css',
-                    ]
                 }]
             }
         },
@@ -168,8 +156,6 @@ module.exports = function(grunt) {
         },
         watch: {
             livereload: {
-                // Here we watch the files the sass task will compile to
-                // These files are sent to the live reload server after sass compiles to them
                 options: { livereload: true },
                 files: ['docs/**/*'],
             },
@@ -275,17 +261,17 @@ module.exports = function(grunt) {
     grunt.registerTask('build', [
         'clean:empty',
         'copy:favicon',
-        'processhtml',
+        'copy:html',
         'htmlmin',
         'concat',
         'uglify',
+        'responsive_images',
+        'image',
+        'cwebp',
         'sass',
         'postcss',
         'cssmin',
         'critical',
-        'responsive_images',
-        'image',
-        'cwebp',
         'clean:kondo',
     ]);
 };

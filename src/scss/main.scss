@@ -1,0 +1,33 @@
+@import "src/scss/utils/functions";
+@import "src/scss/utils/mixins";
+@import "src/scss/utils/variables";
+
+@import "src/scss/vendor/bootstrap/functions";
+@import "src/scss/vendor/bootstrap/variables";
+@import "src/scss/vendor/bootstrap/mixins/breakpoints";
+//@import "vendor/bootstrap/utils/grid-framework";
+//@import "vendor/bootstrap/utils/grid";
+
+
+@import 'src/scss/vendor/preset';
+
+@import 'src/scss/keyframes/index';
+@import 'src/scss/quarks/index';
+
+@import 'src/scss/elements/typography/index';
+@import 'src/scss/elements/container/index';
+@import 'src/scss/elements/profile_image/index';
+
+@import 'src/scss/modules/navigation/index';
+@import 'src/scss/modules/about/index';
+@import 'src/scss/modules/timeline/index';
+@import 'src/scss/modules/mood_image/index';
+@import 'src/scss/modules/skills/index';
+@import 'src/scss/modules/contact/index';
+
+@import 'src/scss/page/index';
+
+@import "src/scss/behavior";
+
+@import "src/scss/vendor/fullpage";
+
