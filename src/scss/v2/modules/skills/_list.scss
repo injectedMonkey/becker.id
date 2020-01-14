@@ -7,12 +7,14 @@
 
   &--List {
     display: inline;
-    padding: 5px;
-    margin: 10px 4px;
+    padding: 0;
+    margin: 0 10px 0 0;
   }
 
   &--List + &--List {
     border-left: 1px solid #333;
+    padding-left: 10px;
+    margin-right: 0;
   }
 
   &--Item {
@@ -34,8 +36,11 @@
     &__Windows {
       display: inline-block;
       height: 30px;
-      width: 50px;
-      margin: 0 .1em;
+      width: calc(((100% - 20px) / 15) - 5px);
+      margin: 0;
+      //margin: 0 .1em;
+
+
       cursor: pointer;
 
       background-size: contain;
