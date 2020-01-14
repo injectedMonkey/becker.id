@@ -16,12 +16,14 @@
 .Skills {
   &--Container {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    border-top: 2px solid darkgoldenrod;
+    border-top: 2px solid $gold;
     text-align: center;
+    background: $background;
 
     @include media-breakpoint-up(lg) {
       box-shadow: none;
       border: none;
+      background: none;
 
       display: flex;
     }
@@ -89,6 +91,7 @@
       transition: all 0.3s cubic-bezier(.25,.8,.25,1);
       text-align: center;
       padding: 8em 1.5em 1.5em;
+      background: $background;
 
       &:hover {
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
