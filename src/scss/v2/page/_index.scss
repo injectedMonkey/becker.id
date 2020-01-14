@@ -1,0 +1,24 @@
+.PageWrapper {
+  overflow-x: hidden;
+}
+
+.section:nth-child(even) {
+  background-color: $background_alt;
+}
+
+.section:nth-child(odd) {
+  background-color: $background;
+}
+
+::selection,
+::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+
+* {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
