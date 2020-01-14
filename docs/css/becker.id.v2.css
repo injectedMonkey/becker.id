@@ -827,87 +827,72 @@ p {
     width: 32%;
     order: 3; } }
 
-.TechStack--Heading {
-  font-size: smaller;
-  font-weight: initial;
-  display: inline; }
-
-.TechStack--List {
-  display: inline;
-  padding: 30px 0 0;
-  margin: 0 10px 0 0; }
-
-.TechStack--List + .TechStack--List {
-  border-left: 1px solid #333;
-  padding-left: 10px;
-  margin-right: 0; }
-
-.TechStack--Item__Angular, .TechStack--Item__Html5, .TechStack--Item__Css3, .TechStack--Item__Sass, .TechStack--Item__Angular, .TechStack--Item__Nodejs, .TechStack--Item__Php, .TechStack--Item__Symfony, .TechStack--Item__MySql, .TechStack--Item__RabbitMq, .TechStack--Item__GitLab, .TechStack--Item__Ansible, .TechStack--Item__Docker, .TechStack--Item__Apple, .TechStack--Item__Linux, .TechStack--Item__Windows {
-  display: inline-block;
-  height: 30px;
-  width: calc(((100% - 20px) / 15) - 1px);
-  margin: 0;
-  cursor: pointer;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  line-height: 90px;
-  font-size: .45em;
-  text-align: center;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  filter: grayscale(100%) contrast(200%); }
-  .TechStack--Item__Angular:hover, .TechStack--Item__Html5:hover, .TechStack--Item__Css3:hover, .TechStack--Item__Sass:hover, .TechStack--Item__Angular:hover, .TechStack--Item__Nodejs:hover, .TechStack--Item__Php:hover, .TechStack--Item__Symfony:hover, .TechStack--Item__MySql:hover, .TechStack--Item__RabbitMq:hover, .TechStack--Item__GitLab:hover, .TechStack--Item__Ansible:hover, .TechStack--Item__Docker:hover, .TechStack--Item__Apple:hover, .TechStack--Item__Linux:hover, .TechStack--Item__Windows:hover {
-    transform: scale(1.2);
-    filter: none; }
-
-.TechStack--Item__Php {
-  height: 50px;
-  background-position-y: -1em; }
-
-.TechStack--Item__Html5 {
-  background-image: url("https://api.iconify.design/icomoon-free:html-five.svg?color=%23e34f26"); }
-
-.TechStack--Item__Css3 {
-  background-image: url("https://api.iconify.design/logos:css-3-official.svg"); }
-
-.TechStack--Item__Sass {
-  background-image: url("https://api.iconify.design/logos:sass.svg"); }
-
-.TechStack--Item__Angular {
-  background-image: url("https://api.iconify.design/logos:angular-icon.svg"); }
-
-.TechStack--Item__Nodejs {
-  background-image: url("https://api.iconify.design/logos:nodejs-icon.svg"); }
-
-.TechStack--Item__Php {
-  background-image: url("https://api.iconify.design/mdi:language-php.svg?color=%234c6b97"); }
-
-.TechStack--Item__Symfony {
-  background-image: url("https://api.iconify.design/logos:symfony.svg"); }
-
-.TechStack--Item__MySql {
-  background-image: url("https://api.iconify.design/logos:mysql.svg"); }
-
-.TechStack--Item__RabbitMq {
-  background-image: url("https://api.iconify.design/logos:rabbitmq.svg"); }
-
-.TechStack--Item__GitLab {
-  background-image: url("https://api.iconify.design/logos:gitlab.svg"); }
-
-.TechStack--Item__Ansible {
-  background-image: url("https://api.iconify.design/simple-icons:ansible.svg"); }
-
-.TechStack--Item__Docker {
-  background-image: url("https://api.iconify.design/logos:docker-icon.svg"); }
-
-.TechStack--Item__Apple {
-  background-image: url("https://api.iconify.design/logos:apple.svg"); }
-
-.TechStack--Item__Linux {
-  background-image: url("https://api.iconify.design/logos:linux-tux.svg"); }
-
-.TechStack--Item__Windows {
-  background-image: url("https://api.iconify.design/logos:microsoft-windows.svg"); }
+.TechStack {
+  height: 88px; }
+  .TechStack--Heading {
+    font-size: smaller;
+    font-weight: initial;
+    display: inline; }
+  .TechStack--List {
+    display: inline;
+    padding: 30px 0 0;
+    margin: 0 10px 0 0; }
+  .TechStack--List + .TechStack--List {
+    border-left: 1px solid #333;
+    padding-left: 10px;
+    margin-right: 0; }
+  .TechStack--Item__Angular, .TechStack--Item__Html5, .TechStack--Item__Css3, .TechStack--Item__Sass, .TechStack--Item__Angular, .TechStack--Item__Nodejs, .TechStack--Item__Php, .TechStack--Item__Symfony, .TechStack--Item__MySql, .TechStack--Item__RabbitMq, .TechStack--Item__GitLab, .TechStack--Item__Ansible, .TechStack--Item__Docker, .TechStack--Item__Apple, .TechStack--Item__Linux, .TechStack--Item__Windows {
+    display: inline-block;
+    height: 30px;
+    width: calc(((100% - 20px) / 15) - 1px);
+    margin: 0;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 90px;
+    font-size: .45em;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    filter: grayscale(100%) contrast(200%); }
+    .TechStack--Item__Angular:hover, .TechStack--Item__Html5:hover, .TechStack--Item__Css3:hover, .TechStack--Item__Sass:hover, .TechStack--Item__Angular:hover, .TechStack--Item__Nodejs:hover, .TechStack--Item__Php:hover, .TechStack--Item__Symfony:hover, .TechStack--Item__MySql:hover, .TechStack--Item__RabbitMq:hover, .TechStack--Item__GitLab:hover, .TechStack--Item__Ansible:hover, .TechStack--Item__Docker:hover, .TechStack--Item__Apple:hover, .TechStack--Item__Linux:hover, .TechStack--Item__Windows:hover {
+      transform: scale(1.2);
+      font-size: 11px;
+      line-height: 88px;
+      filter: none; }
+  .TechStack--Item__Php {
+    height: 50px;
+    background-position-y: -1em; }
+  .TechStack--Item__Html5 {
+    background-image: url("https://api.iconify.design/icomoon-free:html-five.svg?color=%23e34f26"); }
+  .TechStack--Item__Css3 {
+    background-image: url("https://api.iconify.design/logos:css-3-official.svg"); }
+  .TechStack--Item__Sass {
+    background-image: url("https://api.iconify.design/logos:sass.svg"); }
+  .TechStack--Item__Angular {
+    background-image: url("https://api.iconify.design/logos:angular-icon.svg"); }
+  .TechStack--Item__Nodejs {
+    background-image: url("https://api.iconify.design/logos:nodejs-icon.svg"); }
+  .TechStack--Item__Php {
+    background-image: url("https://api.iconify.design/mdi:language-php.svg?color=%234c6b97"); }
+  .TechStack--Item__Symfony {
+    background-image: url("https://api.iconify.design/logos:symfony.svg"); }
+  .TechStack--Item__MySql {
+    background-image: url("https://api.iconify.design/logos:mysql.svg"); }
+  .TechStack--Item__RabbitMq {
+    background-image: url("https://api.iconify.design/logos:rabbitmq.svg"); }
+  .TechStack--Item__GitLab {
+    background-image: url("https://api.iconify.design/logos:gitlab.svg"); }
+  .TechStack--Item__Ansible {
+    background-image: url("https://api.iconify.design/simple-icons:ansible.svg"); }
+  .TechStack--Item__Docker {
+    background-image: url("https://api.iconify.design/logos:docker-icon.svg"); }
+  .TechStack--Item__Apple {
+    background-image: url("https://api.iconify.design/logos:apple.svg"); }
+  .TechStack--Item__Linux {
+    background-image: url("https://api.iconify.design/logos:linux-tux.svg"); }
+  .TechStack--Item__Windows {
+    background-image: url("https://api.iconify.design/logos:microsoft-windows.svg"); }
 
 .Chart {
   justify-content: space-around;
