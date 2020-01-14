@@ -377,7 +377,7 @@ body {
   @media screen and (max-height: 800px) and (min-width: 768px) {
     .ContentContainer {
       margin: 0 auto; } }
-  @media screen and (min-height: 800px) and (min-width: 768px) {
+  @media screen and (min-height: 800px) {
     .ContentContainer {
       position: absolute;
       top: 50%;

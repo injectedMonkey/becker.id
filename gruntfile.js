@@ -35,7 +35,9 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     removeComments: false,
-                    collapseWhitespace: true
+                    collapseWhitespace: true,
+                    minifyJS: true,
+                    processScripts: 'application/ld+json'
                 },
                 files: {
                     'docs/index.html': 'docs/index.html'
