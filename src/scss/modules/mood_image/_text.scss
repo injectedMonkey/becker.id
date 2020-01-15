@@ -26,5 +26,9 @@
     &Blink__White {
       animation: 1s blink__white step-end infinite;
     }
+
+    & .indent {
+      margin-left: 4em;
+    }
   }
 }

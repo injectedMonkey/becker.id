@@ -3,15 +3,17 @@ body {
 }
 
 .PageWrapper {
+  height: 100%;
   overflow-x: hidden;
 }
 
-.section {
+.section:not(.Contact) {
   width: 100%;
+  height: 100vh;
+  position: relative;
   overflow: hidden;
 
   body:not(.fp-responsive) & {
-    height: 100vh;
   }
 
   @include media-breakpoint-up(md) {
@@ -45,5 +47,7 @@ body {
 }
 
 .ContentWrapper {
-  margin: 3.3636em 0 2.3636em;
+  @include media-breakpoint-down(md) {
+    margin: 4.5em 0 3em;
+  }
 }

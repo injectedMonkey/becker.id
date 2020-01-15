@@ -1,6 +1,7 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "becker.id: Jonathan Becker - Web Engineer",
+    "short_name": "becker.id",
+    "description": "Jonathan Becker, Web Engineer & Full Stack Developer - My personal portfolio",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
