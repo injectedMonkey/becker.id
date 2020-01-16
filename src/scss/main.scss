@@ -30,3 +30,7 @@
 @import "src/scss/behavior";
 
 @import "src/scss/vendor/fullpage";
+
+@media print {
+  @import "print/index";
+}

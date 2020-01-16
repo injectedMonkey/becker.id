@@ -4214,8 +4214,6 @@ if(window.jQuery && window.fullpage){
 //# sourceMappingURL=fullpage.min.js.map
 
 (function(window, document, Fullpage, undef) {
-    return;
-
     document.body.className = document.body.className.replace(/no-js/, 'js');
 
     document.querySelectorAll('.has-anchor').forEach(function(link) {

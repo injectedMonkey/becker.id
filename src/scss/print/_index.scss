@@ -1,5 +1,10 @@
-@page { margin: 0; }
-body  { margin: 1.6cm; }
+@page {
+  margin: 0;
+}
+
+body  {
+  margin: 1.6cm !important;
+}
 
 * {
   opacity: 1 !important;
@@ -48,7 +53,7 @@ footer,
 .About--Image {
   max-width: 260px;
   max-height: 260px;
-  margin: 120px 20px 20px !important;
+  margin: 80px 20px 20px !important;
 }
 
 #SkillsSection {
@@ -75,12 +80,12 @@ footer,
 }
 
 .Experience--Headline, .Skills--Headline {
-  margin: 50px 0 1em;
+  margin: 50px 0 1em !important;
   text-align: left;
 }
 
 .Skills--Headline {
-  margin-left: 80px;
+  margin-left: 80px !important;
 }
 
 .Skills--TechStack {
