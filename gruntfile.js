@@ -66,6 +66,7 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     'docs/css/<%= pkg.name %>.css': 'src/scss/main.scss',
+                    'docs/css/<%= pkg.name %>.print.css': 'src/scss/print.scss',
                 }
             }
         },
@@ -78,6 +79,7 @@ module.exports = function(grunt) {
                 files: [{
                     'docs/css/<%= pkg.name %>.min.css': [
                         'docs/css/<%= pkg.name %>.css',
+                        'docs/css/<%= pkg.name %>.print.css'
                     ],
                 }]
             }
