@@ -2,12 +2,20 @@
   margin: 0;
 }
 
+html {
+  font-size: 10pt;
+}
+
 body  {
   margin: 1.6cm !important;
 }
 
 * {
   opacity: 1 !important;
+}
+
+h2 {
+  font-size: 20pt !important;
 }
 
 .ContentContainer,
@@ -51,9 +59,9 @@ footer,
 }
 
 .About--Image {
-  max-width: 260px;
-  max-height: 260px;
-  margin: 80px 20px 20px !important;
+  max-width: 220px;
+  max-height: 220px;
+  margin: 50px 20px 20px !important;
 }
 
 #SkillsSection {
@@ -85,7 +93,7 @@ footer,
 }
 
 .Skills--Headline {
-  margin-left: 80px !important;
+  margin-left: 40px !important;
 }
 
 .Skills--TechStack {
@@ -97,11 +105,12 @@ footer,
   height: auto;
   border-left: 1px solid black;
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 10px;
 }
 
 .TechStack--List {
   display: block;
+  margin-top: 8px;
 }
 
 .TechStack--Item__Angular,
@@ -133,7 +142,7 @@ footer,
   transition: none;
   filter: none;
   user-select: text;
-  margin: 0 0 .3em calc(80px - .5em);
+  margin: 0 0 .6em calc(80px - .5em);
 
   &:hover {
     transform: none;
@@ -143,7 +152,7 @@ footer,
 
   &:after {
     display: block;
-    content: '\2605\2605\2605\2605';
+    content: '\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0';
     float: right;
     color: #212529;
     width: 100px;
@@ -151,50 +160,50 @@ footer,
 }
 
 .TechStack--Item__Angular:after {
-  content: '\2605\2605\2605\2605\2605';
+  content: '\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0';
 }
 .TechStack--Item__Html5:after {
-  content: '\2605\2605\2605\2605\2605';
+  content: '\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0';
 }
 .TechStack--Item__Css3:after {
-  content: '\2605\2605\2605\2605\2605';
+  content: '\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0';
 }
 .TechStack--Item__Sass:after {
-  content: '\2605\2605\2605\2605\2605';
+  content: '\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0';
 }
 .TechStack--Item__Angular:after {
-  content: '\2605\2605\2605\2605';
+  content: '\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0';
 }
 .TechStack--Item__Nodejs:after {
-  content: '\2605\2605\2605\2605';
+  content: '\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0';
 }
 .TechStack--Item__Php:after {
-  content: '\2605\2605\2605\2605\2605';
+  content: '\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0';
 }
 .TechStack--Item__Symfony:after {
-  content: '\2605\2605\2605\2605\2605';
+  content: '\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0';
 }
 .TechStack--Item__MySql:after {
-  content: '\2605\2605\2605\2605';
+  content: '\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0';
 }
 .TechStack--Item__RabbitMq:after {
-  content: '\2605\2605\2605\2605';
+  content: '\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0';
 }
 .TechStack--Item__GitLab:after {
-  content: '\2605\2605\2605\2605';
+  content: '\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0';
 }
 .TechStack--Item__Ansible:after {
-  content: '\2605\2605\2605\2605\2605';
+  content: '\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0';
 }
 .TechStack--Item__Docker:after {
-  content: '\2605\2605\2605';
+  content: '\25CF\0000a0\25CF\0000a0\25CF\0000a0';
 }
 .TechStack--Item__Apple:after {
-  content: '\2605\2605\2605\2605\2605';
+  content: '\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0';
 }
 .TechStack--Item__Linux:after {
-  content: '\2605\2605\2605\2605';
+  content: '\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0';
 }
 .TechStack--Item__Windows:after {
-  content: '\2605\2605\2605\2605';
+  content: '\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0';
 }

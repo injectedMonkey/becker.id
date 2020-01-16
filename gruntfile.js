@@ -167,7 +167,8 @@ module.exports = function(grunt) {
                 files: 'src/scss/**/*.scss',
                 tasks: [
                     'sass',
-                    // 'cssmin'
+                    'postcss',
+                    'cssmin'
                 ]
             },
             html: {
