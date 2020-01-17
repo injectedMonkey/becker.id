@@ -1,0 +1,104 @@
+dd, dt {
+  display: inline-block;
+}
+
+dt {
+  width: 30%;
+  font-weight: 300;
+}
+
+dd {
+  width: 60%;
+  margin: 0;
+}
+
+.About--Text {
+  width: 65%;
+}
+
+.About--Image {
+  margin: 0 !important;
+}
+
+.Experience--Headline,
+.Skills--Headline {
+  font-size: 22px !important;
+}
+
+.Experience--Headline {
+  margin: 30px 0 1em !important
+}
+
+.Skills--Headline {
+  margin: 30px 0 1em 40px !important
+}
+
+.Skills--Headline.pull {
+  margin: 40px 0 1em 30px !important
+}
+
+.Timeline {
+  font-size: 16px;
+}
+
+.Timeline__Experience {
+  margin-left: 27%;
+}
+
+.Timeline__Experience--EmployerCity,
+.Timeline__Experience--JobTime {
+  font-size: 12px;
+}
+
+.TimelineItem {
+  padding: .1em 0 .4em 1.4em;
+}
+
+#SkillsSection {
+  width: 40%;
+}
+
+.TechStack--Item__Angular, .TechStack--Item__Html5, .TechStack--Item__Css3, .TechStack--Item__Sass, .TechStack--Item__Angular, .TechStack--Item__Nodejs, .TechStack--Item__Php, .TechStack--Item__Symfony, .TechStack--Item__MySql, .TechStack--Item__RabbitMq, .TechStack--Item__GitLab, .TechStack--Item__Ansible, .TechStack--Item__Docker, .TechStack--Item__Apple, .TechStack--Item__Linux, .TechStack--Item__Windows {
+  margin: 0 0 .6em calc(40px - .5em)
+}
+
+.TechStack--Item__3Star,
+.TechStack--Item__4Star,
+.TechStack--Item__5Star {
+  text-indent: 0;
+  text-align: left;
+  background: 0;
+  display: block;
+  line-height: 1.5;
+  height: auto;
+  width: 200px;
+  font-size: 1rem;
+  cursor: default;
+  transition: none;
+  filter: none;
+  user-select: text;
+  margin: 0 0 .6em calc(40px - .5em);
+
+  &:after {
+    content: '';
+    display: block;
+    float: right;
+    color: #212529;
+    width: 100px;
+
+  }
+}
+.TechStack--Item__3Star:after {
+  content: '\25CF\0000a0\25CF\0000a0\25CF';
+}
+.TechStack--Item__4Star:after {
+  content: '\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF';
+}
+.TechStack--Item__5Star:after {
+  content: '\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF\0000a0\25CF';
+}
+
+.uvm {
+  margin: 0 0 -20px 30px;
+  font-size: smaller;
+}
