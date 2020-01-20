@@ -31,7 +31,8 @@
     &__Docker,
     &__Apple,
     &__Linux,
-    &__Windows {
+    &__Windows,
+    &__Typo3 {
       display: inline-block;
       height: 30px;
       width: 50px;
@@ -81,7 +82,7 @@
     }
 
     &__Css3 {
-      background-image: url('https://api.iconify.design/logos:css-3-official.svg');
+      background-image: url('https://api.iconify.design/fa-brands:css3.svg?color=%232965f1');
     }
 
     &__Sass {
@@ -134,6 +135,10 @@
 
     &__Windows {
       background-image: url('https://api.iconify.design/logos:microsoft-windows.svg');
+    }
+
+    &__Typo3 {
+      background-image: url('https://api.iconify.design/fa-brands:typo3.svg?color=%23ff8700');
     }
   }
 }

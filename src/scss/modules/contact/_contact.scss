@@ -101,6 +101,18 @@
     margin: 0;
     padding: 20px 0;
     border-top: 2px solid darkgoldenrod;
+
+    & a {
+      color: #fff;
+      text-decoration: none;
+      padding-left: 20px;
+
+      &:hover,
+      &:active,
+      &:visited {
+        color: #dadada;
+      }
+    }
   }
 
   &--Print,
@@ -126,6 +138,10 @@
     background-repeat: no-repeat;
     background-position: center;
     filter: brightness(0.5) grayscale(1);
+
+    .Judith & {
+      margin: .2em .5em;
+    }
 
     &:hover,
     &:active {

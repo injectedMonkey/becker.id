@@ -54,6 +54,10 @@ footer,
 .About--Text {
   width: 75%;
   padding-right: 50px;
+
+  & .TechStack {
+    display: none;
+  }
 }
 
 .About--Image {
@@ -61,6 +65,10 @@ footer,
   max-height: 220px;
   transform: none !important;
   margin: 80px 20px 20px !important;
+
+  .Judith & {
+    margin: 50px 20px 20px !important;
+  }
 }
 
 #SkillsSection {
@@ -76,10 +84,18 @@ footer,
 #ExperienceSection {
   width: 50%;
   float: left;
+
+  .Judith & {
+    width: 100%;
+  }
 }
 
 .Timeline__Experience {
   margin-left: 30%;
+
+  .Judith & {
+    margin-left: 50%;
+  }
 }
 
 .About--Headline {
@@ -89,6 +105,11 @@ footer,
 .Experience--Headline, .Skills--Headline {
   margin: 50px 0 1em !important;
   text-align: left;
+
+  .Judith & {
+    margin: 3em 0 2em !important;
+    text-align: center;
+  }
 }
 
 .Skills--Headline {
