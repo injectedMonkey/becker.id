@@ -106,7 +106,10 @@
   &--Print,
   &--Mail,
   &--Xing,
-  &--Linkedin {
+  &--Linkedin,
+  &--Facebook,
+  &--Twitter,
+  &--Instagram {
     font-size: 1em;
     height: 2em;
     width: 2em;
@@ -141,5 +144,17 @@
 
   &--Linkedin {
     background-image: url('https://api.iconify.design/fa-brands:linkedin.svg?color=%23b8860b');
+  }
+
+  &--Facebook {
+    background-image: url('https://api.iconify.design/fa-brands:facebook-square.svg?color=%23b8860b');
+  }
+
+  &--Twitter {
+    background-image: url('https://api.iconify.design/fa-brands:twitter-square.svg?color=%23b8860b');
+  }
+
+  &--Instagram {
+    background-image: url('https://api.iconify.design/fa-brands:instagram.svg?color=%23b8860b');
   }
 }

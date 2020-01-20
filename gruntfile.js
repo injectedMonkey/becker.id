@@ -190,7 +190,7 @@ module.exports = function(grunt) {
                     require('autoprefixer')({}),
                     require('postcss-combine-media-query')(),
                     require('postcss-uncss')({
-                        html: ['docs/index.html'],
+                        html: ['docs/index.html', 'docs/judith.html'],
                         ignore: [/[\.#]fp-./]
                     }),
                     require('cssnano')({
