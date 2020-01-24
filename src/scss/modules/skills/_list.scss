@@ -32,7 +32,13 @@
     &__Apple,
     &__Linux,
     &__Windows,
-    &__Typo3 {
+    &__Typo3,
+    &__Facebook,
+    &__Twitter,
+    &__Instagram,
+    &__Pinterest,
+    &__WhatsApp,
+    &__Adobe {
       display: inline-block;
       height: 30px;
       width: 50px;
@@ -139,6 +145,28 @@
 
     &__Typo3 {
       background-image: url('https://api.iconify.design/fa-brands:typo3.svg?color=%23ff8700');
+    }
+
+    &__Facebook {
+      background-image: url('https://api.iconify.design/fa-brands:facebook-square.svg?color=%234267B2');
+    }
+
+    &__Twitter {
+      background-image: url('https://api.iconify.design/fa-brands:twitter-square.svg?color=%231DA1F2');
+    }
+
+    &__Instagram {
+      background-image: url('https://api.iconify.design/fa-brands:instagram.svg?color=%23212529');
+    }
+
+    &__Pinterest {
+      background-image: url('https://api.iconify.design/fa-brands:pinterest.svg?color=%23E60023');
+    }
+    &__WhatsApp {
+      background-image: url('https://api.iconify.design/fa-brands:whatsapp.svg?color=%2325D366');
+    }
+    &__Adobe {
+      background-image: url('https://api.iconify.design/fa-brands:adobe.svg?color=%23ff0000');
     }
   }
 }
